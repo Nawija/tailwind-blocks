@@ -63,7 +63,7 @@ export default function NavigationPage() {
                         />
                     </div>
                 </div>
-            ))}
+            ))} 
         </Layout>
     );
 }
