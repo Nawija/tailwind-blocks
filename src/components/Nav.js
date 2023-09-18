@@ -16,9 +16,11 @@ export default function Nav() {
     };
 
     const inActiveLink =
-        "flex-sc font-medium text-sm hover:bg-white/20 transition-colors rounded-lg p-2";
+        "flex-sc font-medium text-sm hover:bg-white/20 transition-colors rounded-lg py-2 pl-3 pr-10";
     const activeLink =
         inActiveLink + " text-main bg-gray-100 hover:bg-white/80";
+
+    const iconStyle = "text-3xl mr-2";
 
     return (
         <>
@@ -29,7 +31,7 @@ export default function Nav() {
                 <FiMenu />
             </button>
             <aside
-                className={`px-2 pt-6 text-white lg:relative fixed top-0 transition-all left-0 h-screen ${
+                className={`px-2 pt-6 text-white lg:relative fixed top-0 transition-all left-0 h-full ${
                     showMenu
                         ? "z-50 translate-x-0 bg-gray-800"
                         : "-z-10 lg:z-50 -translate-x-full lg:translate-x-0"
@@ -51,12 +53,12 @@ export default function Nav() {
                         </p>
                     </div>
                 </div>
-                <nav className="flex items-stretch flex-col gap-1 w-max">
+                <nav className="flex items-stretch flex-col gap-2 w-max">
                     <Link
                         to="/"
                         className={pathname === "/" ? activeLink : inActiveLink}
                     >
-                        <FaHome className="text-3xl mr-2" />
+                        <FaHome className={iconStyle} />
                         <span>Home</span>
                     </Link>
                     <Link
@@ -67,7 +69,7 @@ export default function Nav() {
                                 : inActiveLink
                         }
                     >
-                        <IoMdNavigate className="text-3xl mr-2" />
+                        <IoMdNavigate className={iconStyle} />
                         <span>Navigation</span>
                     </Link>
                     <Link
@@ -76,7 +78,7 @@ export default function Nav() {
                             pathname === "/blog/" ? activeLink : inActiveLink
                         }
                     >
-                        <BsFillFileEarmarkPostFill className="text-3xl mr-2" />
+                        <BsFillFileEarmarkPostFill className={iconStyle} />
                         <span>Blog</span>
                     </Link>
                 </nav>
