@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
     return (
         <div className="flex">
             <Nav siteTitle={data.site.siteMetadata?.title || `Seovileo`} />
-            <main className="w-full min-h-screen relative bg-gray-100">
+            <main className="w-full min-h-screen relative bg-gray-100 px-8">
                 {children}
             </main>
         </div>
