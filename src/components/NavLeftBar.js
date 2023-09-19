@@ -21,7 +21,11 @@ export default function NavLeftBar({ showMenu }) {
 
     return (
         <>
-            <aside className={`pl-2 mt-16 pt-4 text-white h-screen z-50 transition-all ${showMenu ? "ml-[0px]" : "-ml-[258px]"}`}>
+            <aside
+                className={`px-2 mt-16 pt-4 fixed text-white bg-white border h-screen z-50 transition-all ${
+                    showMenu ? "ml-[0px]" : "-ml-[258px]"
+                }`}
+            >
                 <nav className="flex items-stretch flex-col gap-2">
                     <Link
                         to="/"

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
-const render = 
-`<section class="text-gray-600 body-font overflow-hidden  max-w-screen-xl mx-auto">
+const code = `<section class="text-gray-600 body-font overflow-hidden  max-w-screen-xl mx-auto">
 <div class="px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-12">
         <div class="p-12 md:w-1/2 flex flex-col items-start">
@@ -162,9 +161,9 @@ const render =
 
 function B({ setHtmlToCopy }) {
     useEffect(() => {
-        const htmlContent = render;
+        const htmlContent = code;
         setHtmlToCopy(htmlContent);
     }, [setHtmlToCopy]);
-    return <div dangerouslySetInnerHTML={{ __html: render }} />;
+    return <div dangerouslySetInnerHTML={{ __html: code }} />;
 }
 export default B;

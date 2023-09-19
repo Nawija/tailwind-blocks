@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import NavLeftBar from "./NavLeftBar";
 
 const Layout = ({ children }) => {
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(true);
     const handleShowMenu = () => {
         setShowMenu(!showMenu);
     };
@@ -12,8 +12,8 @@ const Layout = ({ children }) => {
             <Nav handleShowMenu={handleShowMenu} />
             <NavLeftBar showMenu={showMenu} />
             <main
-                className={`w-full min-h-screen relative mt-16 transition-all bg-gray-100 overflow-x-hidden ${
-                    showMenu ? "ml-[258px] lg:ml-0" : "ml-0"
+                className={`w-full min-h-screen relative mt-16 transition-all bg-gray-100 overflow-x-hidden lg:px-4 ${
+                    showMenu ? "-ml-[258px] lg:ml-[258px]" : "ml-0"
                 }`}
             >
                 {children}
