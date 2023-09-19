@@ -43,7 +43,6 @@ export default function NavigationPage() {
                 </div>
                 <div className="bg-white rounded-lg border m-2">
                     <A setHtmlToCopy={setHtmlToCopy} />{" "}
-                    {/* Przekaż funkcję do ustawiania zawartości */}
                 </div>
             </div>
             <div className="relative mb-2 group">

@@ -3,15 +3,20 @@
 @tailwind utilities;
 
 :root {
-    --main-color: #1f2937;
+    --main-color: #ffffff;
+    --main-text-color: #292953;
+    --second-text-color: #3f3f3f;
 }
 
 body {
-    background-color: var(--main-color);
+    background-color: rgb(243, 244, 246);
 }
 
 .text-main {
-    color: var(--main-color);
+    color: var(--main-text-color);
+}
+.text-second {
+    color: var(--second-text-color);
 }
 .bg-main {
     background-color: var(--main-color);

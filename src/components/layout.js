@@ -1,23 +1,14 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 
 import Nav from "./Nav";
 
 const Layout = ({ children }) => {
-    const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `);
-
     return (
         <div className="flex">
-            <Nav siteTitle={data.site.siteMetadata?.title || `Seovileo`} />
-            <main className="w-full min-h-screen relative bg-gray-100 px-8">
+            <Nav />
+            <main
+                className={`w-full min-h-screen relative mt-16 bg-gray-100 md:px-8 max-w-screen-2xl mx-auto`}
+            >
                 {children}
             </main>
         </div>

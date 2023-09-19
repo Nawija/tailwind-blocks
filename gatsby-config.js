@@ -3,7 +3,7 @@
  */
 module.exports = {
     siteMetadata: {
-        title: ``,
+        title: `Tailwind Blocks | Seovileo`,
         siteUrl: `https://www.seovileo.pl`,
         author: `seovileo`,
     },
