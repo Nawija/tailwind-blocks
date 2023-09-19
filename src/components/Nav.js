@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import MenuButton from "./MenuButton";
 import { StaticImage } from "gatsby-plugin-image";
 
-export default function Nav() {
-    const [showMenu, setShowMenu] = useState(false);
-    const handleShowMenu = () => {
-        setShowMenu(!showMenu);
-    };
-
+export default function Nav({ showMenu, handleShowMenu }) {
     return (
         <>
             <aside

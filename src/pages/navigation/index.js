@@ -20,8 +20,8 @@ export default function NavigationPage() {
 
     return (
         <Layout>
-            <div className="relative mb-2 group">
-                <div className="flex-ec w-full text-xl p-2">
+            <div className="relative mb-2 group transition-all">
+                <div className="flex flex-col w-full text-xl p-2">
                     <button
                         className="bg-main p-3 rounded-full border text-white"
                         onClick={() => handleCopyClick()}

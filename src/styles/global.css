@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add these styles to your stylesheet to control the transition and padding */
+
+.menu-open main {
+    padding-left: 200px;
+    transition: padding-left 0.3s ease;
+}
+
+.menu-open .NavLeftBar {
+    margin-left: 200px;
+    transition: margin-left 0.3s ease;
+}
+
 :root {
     --main-color: #ffffff;
-    --main-text-color: #292953;
-    --second-text-color: #3f3f3f;
+    --main-text-color: #1b1b57;
+    --second-text-color: #3b82f6;
 }
 
 body {
