@@ -26,7 +26,7 @@ export default function NavigationPage() {
                         className="bg-main p-3 rounded-full border text-white"
                         onClick={() => handleCopyClick()}
                     >
-                        {copiedIndex !== -1 ? (
+                        {copiedIndex ? (
                             <div className="text-green-600 relative font-semibold scale-up-center">
                                 <FaCheck />
                                 <span
@@ -45,13 +45,13 @@ export default function NavigationPage() {
                     <A setHtmlToCopy={setHtmlToCopy} />{" "}
                 </div>
             </div>
-            <div className="relative mb-2 group">
-                <div className="flex-ec w-full text-xl p-2">
+            <div className="relative mb-2 group transition-all">
+                <div className="flex flex-col w-full text-xl p-2">
                     <button
                         className="bg-main p-3 rounded-full border text-white"
                         onClick={() => handleCopyClick()}
                     >
-                        {copiedIndex !== -1 ? (
+                        {copiedIndex ? (
                             <div className="text-green-600 relative font-semibold scale-up-center">
                                 <FaCheck />
                                 <span
@@ -68,9 +68,9 @@ export default function NavigationPage() {
                 </div>
                 <div className="bg-white rounded-lg border m-2">
                     <B setHtmlToCopy={setHtmlToCopy} />{" "}
-                    {/* Przekaż funkcję do ustawiania zawartości */}
                 </div>
             </div>
+            
         </Layout>
     );
 }
