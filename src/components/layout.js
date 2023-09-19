@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
             <Nav handleShowMenu={handleShowMenu} />
             <NavLeftBar showMenu={showMenu} />
             <main
-                className={`w-full min-h-screen relative mt-16 transition-all bg-gray-100 overflow-x-hidden lg:px-4 ${
+                className={`w-full min-h-screen relative mt-20 mb-3 transition-all bg-gray-100 overflow-x-hidden lg:px-4 ${
                     showMenu ? "-ml-[258px] lg:ml-[258px]" : "ml-0"
                 }`}
             >
