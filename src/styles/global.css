@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add these styles to your stylesheet to control the transition and padding */
-
-.menu-open main {
-    padding-left: 200px;
-    transition: padding-left 0.3s ease;
-}
-
-.menu-open .NavLeftBar {
-    margin-left: 200px;
-    transition: margin-left 0.3s ease;
+.wrapper2xl{
+    margin: 0 auto;
+    max-width: 1536px;
 }
 
 :root {
@@ -72,17 +65,17 @@ body {
 
 
 .scale-up-center {
-    animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1)
+    animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1)
         alternate-reverse both;
 }
 
 @keyframes scale-up-center {
     100% {
-        transform: scale(1.1);
+        transform: scale(1);
         color: rgb(7, 155, 61);
     }
     50% {
-        transform: scale(0.8);
+        transform: scale(1.2);
         color: rgb(34, 197, 94);
     }
     100% {

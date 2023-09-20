@@ -21,11 +21,11 @@ const Layout = ({ children }) => {
 
             <div
                 onClick={handleCloseLeftMenu}
-                className={`w-full bg-gray-100 min-h-screen relative pt-[4.5rem] pb-3 transition-all overflow-x-hidden sm:px-4 ${
+                className={`w-full bg-gray-100 min-h-screen relative pt-[4.5rem] pb-3 transition-all sm:px-4 ${
                     showMenu ? "h-screen md:ml-[258px]" : "ml-0"
                 }`}
             >
-                <main className="z-10 anim-opacity">{children}</main>
+                <main className="anim-opacity">{children}</main>
             </div>
         </div>
     );
