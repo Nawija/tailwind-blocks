@@ -6,7 +6,7 @@ import { FaHome } from "react-icons/fa";
 import { IoMdNavigate } from "react-icons/io";
 import { BsFillFileEarmarkPostFill } from "react-icons/bs";
 
-export default function NavLeftBar({ showMenu }) {
+export default function NavLeftBar({ showMenu, handleTimeCloseLeftMenu }) {
     const { pathname } = useLocation();
 
     const linkStyle =
@@ -23,11 +23,12 @@ export default function NavLeftBar({ showMenu }) {
         <>
             <aside
                 className={`px-2 mt-16 pt-4 fixed text-white bg-white border h-screen z-50 transition-all ${
-                    showMenu ? "ml-[0px]" : "-ml-[258px]"
+                    showMenu ? "ml-[0px]" : "-ml-[300px]"
                 }`}
             >
                 <nav className="flex items-stretch flex-col gap-2">
                     <Link
+                        onClick={handleTimeCloseLeftMenu}
                         to="/"
                         className={pathname === "/" ? activeLink : inActiveLink}
                     >
@@ -35,6 +36,7 @@ export default function NavLeftBar({ showMenu }) {
                         <span>Home</span>
                     </Link>
                     <Link
+                        onClick={handleTimeCloseLeftMenu}
                         to={"/navigation/"}
                         className={
                             pathname === "/navigation/"
@@ -46,6 +48,7 @@ export default function NavLeftBar({ showMenu }) {
                         <span>Navigation</span>
                     </Link>
                     <Link
+                        onClick={handleTimeCloseLeftMenu}
                         to={"/blog/"}
                         className={
                             pathname === "/blog/" ? activeLink : inActiveLink

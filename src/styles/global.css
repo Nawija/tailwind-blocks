@@ -71,14 +71,33 @@ body {
 }
 
 .scale-up-center {
-    animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1)
+        alternate-reverse both;
 }
 
 @keyframes scale-up-center {
-    0% {
-        transform: scale(0.7);
+    100% {
+        transform: scale(1.1);
+        color: rgb(7, 155, 61);
+    }
+    50% {
+        transform: scale(0.8);
+        color: rgb(34, 197, 94);
     }
     100% {
         transform: scale(1);
+        color: rgb(4, 102, 40);
+    }
+}
+.anim-opacity {
+    animation: anim-opacity 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes anim-opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

@@ -4,20 +4,41 @@ import NavLeftBar from "./NavLeftBar";
 
 const Layout = ({ children }) => {
     const [showMenu, setShowMenu] = useState(true);
+
     const handleShowMenu = () => {
         setShowMenu(!showMenu);
+    };
+    const handleCloseLeftMenu = () => {
+        setShowMenu(setShowMenu(false));
+    };
+    const handleTimeCloseLeftMenu = () => {
+        setTimeout(() => {
+            setShowMenu(false);
+        }, 2000);
     };
     return (
         <div className="flex">
             <Nav handleShowMenu={handleShowMenu} />
-            <NavLeftBar showMenu={showMenu} />
-            <main
-                className={`w-full min-h-screen relative mt-20 mb-3 transition-all bg-gray-100 overflow-x-hidden lg:px-4 ${
-                    showMenu ? "-ml-[258px] lg:ml-[258px]" : "ml-0"
+            <NavLeftBar
+                handleTimeCloseLeftMenu={handleTimeCloseLeftMenu}
+                showMenu={showMenu}
+            />
+
+            <div
+                onClick={handleCloseLeftMenu}
+                className={`w-full bg-gray-100 min-h-screen relative pt-[4.5rem] pb-3 transition-all overflow-x-hidden sm:px-4 ${
+                    showMenu ? "h-screen md:ml-[258px]" : "ml-0"
                 }`}
             >
-                {children}
-            </main>
+                <main className="z-10">{children}</main>
+                <div
+                    className={`absolute top-0 left-0 w-full bg-black/80 duration-300 ${
+                        !showMenu
+                            ? ""
+                            : "h-full anim-opacity"
+                    }`}
+                />
+            </div>
         </div>
     );
 };
