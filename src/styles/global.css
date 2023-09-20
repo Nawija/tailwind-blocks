@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.wrapper2xl{
+.wrapper2xl {
     margin: 0 auto;
     max-width: 1536px;
 }
@@ -25,6 +25,13 @@ body {
 }
 .bg-main {
     background-color: var(--main-color);
+}
+
+.scrollNav {
+    overflow-y: scroll;
+}
+.scrollNav::-webkit-scrollbar {
+    width: 0;
 }
 
 .flex-c {
@@ -62,7 +69,6 @@ body {
     align-items: center;
     justify-content: space-around;
 }
-
 
 .scale-up-center {
     animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1)

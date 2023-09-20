@@ -8,12 +8,6 @@ module.exports = {
         author: `seovileo`,
     },
     plugins: [
-        {
-            resolve: "gatsby-source-datocms",
-            options: {
-                apiToken: "0a0e124702c80b2ad0cc48840d6d7d",
-            },
-        },
         "gatsby-plugin-image",
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
