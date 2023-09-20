@@ -11,16 +11,11 @@ const Layout = ({ children }) => {
     const handleCloseLeftMenu = () => {
         setShowMenu(setShowMenu(false));
     };
-    const handleTimeCloseLeftMenu = () => {
-        setTimeout(() => {
-            setShowMenu(false);
-        }, 2000);
-    };
+
     return (
-        <div className="flex">
+        <div className="flex overflow-x-hidden">
             <Nav handleShowMenu={handleShowMenu} />
             <NavLeftBar
-                handleTimeCloseLeftMenu={handleTimeCloseLeftMenu}
                 showMenu={showMenu}
             />
 
@@ -30,7 +25,7 @@ const Layout = ({ children }) => {
                     showMenu ? "h-screen md:ml-[258px]" : "ml-0"
                 }`}
             >
-                <main className="z-10">{children}</main>
+                <main className="z-10 anim-opacity">{children}</main>
             </div>
         </div>
     );
