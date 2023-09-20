@@ -30,7 +30,7 @@ export default function NavigationPage() {
                         >
                             {copiedIndex ? (
                                 <div className="text-green-600 relative font-semibold scale-up-center">
-                                    <FaCheck />
+                                    <FaCheck className="flip-horizontal-bottom" />
                                     <span
                                         className={`text-sm absolute top-1/2 -left-5 rounded-lg transition-transform -translate-x-full -translate-y-1/2 bg-white p-2`}
                                     >

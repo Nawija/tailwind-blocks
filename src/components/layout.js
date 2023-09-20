@@ -31,13 +31,6 @@ const Layout = ({ children }) => {
                 }`}
             >
                 <main className="z-10">{children}</main>
-                <div
-                    className={`absolute top-0 left-0 w-full bg-black/80 duration-300 ${
-                        !showMenu
-                            ? ""
-                            : "h-full anim-opacity"
-                    }`}
-                />
             </div>
         </div>
     );
