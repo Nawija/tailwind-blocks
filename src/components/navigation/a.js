@@ -9,7 +9,7 @@ function A() {
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <img
                                 class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                src="https://dummyimage.com/720x400"
+                                src="https://source.unsplash.com/random/300×300"
                                 alt="blog"
                             />
                             <div class="p-6">
@@ -81,7 +81,7 @@ function A() {
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <img
                                 class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                src="https://dummyimage.com/721x401"
+                                src="https://source.unsplash.com/random/300×300"
                                 alt="blog"
                             />
                             <div class="p-6">
@@ -153,7 +153,7 @@ function A() {
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <img
                                 class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                src="https://dummyimage.com/722x402"
+                                src="https://source.unsplash.com/random/300×300"
                                 alt="blog"
                             />
                             <div class="p-6">
