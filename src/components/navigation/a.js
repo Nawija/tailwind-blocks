@@ -2,7 +2,7 @@ import React from "react";
 
 const A = () => (
     <header class="text-gray-800 flex items-center justify-between p-5">
-            <a class="flex font-medium items-center justify-center text-gray-900">
+            <a href="#" class="flex font-medium items-center justify-center text-gray-900">
                 <svg
                     class="w-7 h-7 text-green-600 rounded-full"
                     xmlns="http://www.w3.org/2000/svg"
