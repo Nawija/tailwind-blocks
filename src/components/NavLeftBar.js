@@ -54,6 +54,7 @@ export default function NavLeftBar({ showMenu }) {
 
                     <Link
                         to={"/navigation/"}
+                        stateShowMenu={false}
                         className={
                             pathname === "/navigation/"
                                 ? activeLink
