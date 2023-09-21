@@ -8,7 +8,7 @@ const A = () => (
                     <div class="h-full border-2 border-gray-100 rounded-lg overflow-hidden">
                         <img
                             class="h-48 w-full object-cover object-center"
-                            src="https://source.unsplash.com/random/300×300"
+                            src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="blog"
                         />
                         <div class="p-6">
@@ -75,7 +75,7 @@ const A = () => (
                     <div class="h-full border-2 border-gray-100 rounded-lg overflow-hidden">
                         <img
                             class="h-48 w-full object-cover object-center"
-                            src="https://source.unsplash.com/random/300×300"
+                            src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="blog"
                         />
                         <div class="p-6">
@@ -142,7 +142,7 @@ const A = () => (
                     <div class="h-full border-2 border-gray-100 rounded-lg overflow-hidden">
                         <img
                             class="h-48 w-full object-cover object-center"
-                            src="https://source.unsplash.com/random/300×300"
+                            src="https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="blog"
                         />
                         <div class="p-6">
