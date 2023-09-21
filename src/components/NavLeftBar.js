@@ -55,9 +55,7 @@ export default function NavLeftBar({ showMenu }) {
                     <Link
                         to={"/card/"}
                         className={
-                            pathname === "/card/"
-                                ? activeLink
-                                : inActiveLink
+                            pathname === "/card/" ? activeLink : inActiveLink
                         }
                     >
                         <SiHiveBlockchain className={iconStyle} />
@@ -93,6 +91,15 @@ export default function NavLeftBar({ showMenu }) {
                     >
                         <RiGalleryFill className={iconStyle} />
                         <span>Gallery</span>
+                    </Link>
+                    <Link
+                        to={"/pricing/"}
+                        className={
+                            pathname === "/pricing/" ? activeLink : inActiveLink
+                        }
+                    >
+                        <ImPriceTags className={iconStyle} />
+                        <span>Pricing</span>
                     </Link>
                     <Link
                         to={"/blog/"}
@@ -159,15 +166,6 @@ export default function NavLeftBar({ showMenu }) {
                     >
                         <IoStatsChart className={iconStyle} />
                         <span>Statistics</span>
-                    </Link>
-                    <Link
-                        to={"/pricing/"}
-                        className={
-                            pathname === "/pricing/" ? activeLink : inActiveLink
-                        }
-                    >
-                        <ImPriceTags className={iconStyle} />
-                        <span>Pricing</span>
                     </Link>
                 </nav>
             </aside>

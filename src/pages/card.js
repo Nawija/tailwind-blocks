@@ -5,7 +5,7 @@ import BlockWrapper from "../components/BlockWrapper";
 
 import A from "../components/card/a";
 
-export default function NavigationPage() {
+export default function CardPage() {
     return (
         <Layout>
             <BlockWrapper title="#1">

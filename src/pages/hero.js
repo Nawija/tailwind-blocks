@@ -5,7 +5,7 @@ import BlockWrapper from "../components/BlockWrapper";
 
 import A from "../components/hero/a";
 
-export default function NavigationPage() {
+export default function HeroPage() {
     return (
         <Layout>
             <BlockWrapper title="Hero #1">
