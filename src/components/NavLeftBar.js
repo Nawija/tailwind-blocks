@@ -11,6 +11,7 @@ import { IoFootstepsSharp } from "react-icons/io5";
 import { TbHandClick } from "react-icons/tb";
 import { IoStatsChart } from "react-icons/io5";
 import { ImPriceTags } from "react-icons/im";
+import { SiHiveBlockchain } from "react-icons/si";
 
 export default function NavLeftBar({ showMenu }) {
     const { pathname } = useLocation();
@@ -50,6 +51,17 @@ export default function NavLeftBar({ showMenu }) {
                     >
                         <RiPagesFill className={iconStyle} />
                         <span>FullPage</span>
+                    </Link>
+                    <Link
+                        to={"/card/"}
+                        className={
+                            pathname === "/card/"
+                                ? activeLink
+                                : inActiveLink
+                        }
+                    >
+                        <SiHiveBlockchain className={iconStyle} />
+                        <span>Card</span>
                     </Link>
 
                     <Link

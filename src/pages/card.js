@@ -3,12 +3,12 @@ import Layout from "../components/layout";
 
 import BlockWrapper from "../components/BlockWrapper";
 
-import A from "../components/hero/a";
+import A from "../components/card/a";
 
 export default function NavigationPage() {
     return (
         <Layout>
-            <BlockWrapper title="Hero #1">
+            <BlockWrapper title="#1">
                 <A />
             </BlockWrapper>
         </Layout>
