@@ -13,6 +13,15 @@ module.exports = {
         "gatsby-transformer-sharp",
         "gatsby-plugin-postcss",
         "gatsby-plugin-sitemap",
+        "gatsby-plugin-robots-txt",
+        {
+            resolve: `gatsby-plugin-nprogress`,
+            options: {
+                color: `tomato`,
+                showSpinner: false,
+                minimum: 0.1,
+            },
+        },
         {
             resolve: "gatsby-plugin-manifest",
             options: {
