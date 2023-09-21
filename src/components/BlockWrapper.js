@@ -18,7 +18,7 @@ function BlockWrapper({ children, title }) {
         }
     }
     return (
-        <div className="relative group transition-all pb-12 wrapper2xl">
+        <div className="relative group transition-all pb-10 wrapper2xl">
             <div className="flex flex-col w-full text-xl p-2">
                 <div className="bg-main rounded-full border text-second flex-b py-2 px-4">
                     <p className="text-sm font-semibold tracking-wide">

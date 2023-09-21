@@ -29,7 +29,7 @@ export default function NavLeftBar({ showMenu }) {
     return (
         <>
             <aside
-                className={`px-2 mt-16 pt-3 pb-5 fixed text-white bg-white border h-full z-50 transition-all scrollNav ${
+                className={`px-2 mt-16 pt-3 pb-5 fixed text-white bg-white border h-screen z-50 transition-all scrollNav ${
                     showMenu ? "ml-[0px]" : "-ml-[300px]"
                 }`}
             >

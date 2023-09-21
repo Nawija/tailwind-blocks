@@ -13,7 +13,9 @@ const Layout = ({ children }) => {
     };
 
     return (
-        <div className="flex">
+        <div
+            className="flex"
+        >
             <Nav handleShowMenu={handleShowMenu} />
             <NavLeftBar showMenu={showMenu} />
 

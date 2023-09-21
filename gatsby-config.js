@@ -3,8 +3,9 @@
  */
 module.exports = {
     siteMetadata: {
-        title: `Tailwind Blocks | Seovileo`,
-        siteUrl: `https://www.seovileo.pl`,
+        title: `Free tailwind blocks | by Seovileo`,
+        description:`Enjoy Tailwind Blocks for free and unlock the doors to boundless creativity! Create without limits!`,
+        siteUrl: `https://www.seovileo.com`,
         author: `seovileo`,
     },
     plugins: [

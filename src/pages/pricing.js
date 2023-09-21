@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import Seo from "../components/Seo";
 
 import BlockWrapper from "../components/BlockWrapper";
 
@@ -14,3 +15,4 @@ export default function PricingPage() {
         </Layout>
     );
 }
+export const Head = () => <Seo />;

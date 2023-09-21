@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
+import Seo from "../components/Seo";
 
 export default function IndexPage() {
     return (
@@ -25,3 +26,4 @@ export default function IndexPage() {
         </Layout>
     );
 }
+export const Head = () => <Seo />;

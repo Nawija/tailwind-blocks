@@ -28,16 +28,16 @@ const A = () => (
                 <div class="w-4 h-0.5 m-1 rounded-lg bg-green-600" />
             </button>
             <nav class="hidden lg:flex items-center text-base justify-center">
-                <a href="#" class="mr-5 hover:text-blue-600 transition-colors">
+                <a href="#" class="mr-5 hover:text-green-600 p-1 transition-colors">
                     First Link
                 </a>
-                <a href="#" class="mr-5 hover:text-blue-600 transition-colors">
+                <a href="#" class="mr-5 hover:text-green-600 p-1 transition-colors">
                     Second Link
                 </a>
-                <a href="#" class="mr-5 hover:text-blue-600 transition-colors">
+                <a href="#" class="mr-5 hover:text-green-600 p-1 transition-colors">
                     Third Link
                 </a>
-                <a href="#" class="mr-5 hover:text-blue-600 transition-colors">
+                <a href="#" class="mr-5 hover:text-green-600 p-1 transition-colors">
                     Fourth Link
                 </a>
             </nav>
