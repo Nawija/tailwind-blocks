@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../components/layout";
-import Seo from "../components/Seo";
+import Layout from "../../components/layout";
+import Seo from "../../components/Seo";
 
-import BlockWrapper from "../components/BlockWrapper";
+import BlockWrapper from "../../components/BlockWrapper";
 
-import A from "../components/pricing/a";
+import A from "../../components/pricing/a";
 
 export default function PricingPage() {
     return (

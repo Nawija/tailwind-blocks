@@ -1,12 +1,12 @@
 import React from "react";
-import Layout from "../components/layout";
-import Seo from "../components/Seo";
+import Layout from "../../components/layout";
+import Seo from "../../components/Seo";
 
-import BlockWrapper from "../components/BlockWrapper";
-import A from "../components/navigation/a";
-import B from "../components/navigation/b";
-import C from "../components/navigation/c";
-import D from "../components/navigation/d";
+import BlockWrapper from "../../components/BlockWrapper";
+import A from "../../components/navigation/a";
+import B from "../../components/navigation/b";
+import C from "../../components/navigation/c";
+import D from "../../components/navigation/d";
 
 export default function NavigationPage() {
     return (

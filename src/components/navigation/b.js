@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const B = () => (
     <header class="text-gray-800 flex items-center justify-between p-5">
-            <a href="#" class="flex font-bold items-center justify-center text-gray-900">
+            <Link to="#" class="flex font-bold items-center justify-center text-gray-900">
                 <svg
                     class="w-10 h-10 p-2 bg-black text-white rounded-full"
                     xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +19,7 @@ const B = () => (
                     />
                 </svg>
                 <span class="ml-1">TailwindBlock</span>
-            </a>
+            </Link>
             <button
                 aria-label="Menu"
                 class="lg:hidden bg-gray-100 border p-2.5 z-50 rounded-lg "
@@ -28,18 +29,18 @@ const B = () => (
                 <div class="w-4 h-0.5 m-1 rounded-lg bg-black" />
             </button>
             <nav class="hidden lg:flex items-center text-base justify-center">
-                <a href="#" class="mr-3 hover:text-black hover:border-black font-medium duration-300 delay-75 p-3 border-b-2 border-transparent transition-colors">
+                <Link to="#" class="mr-3 hover:text-black hover:border-black font-medium duration-300 delay-75 p-3 border-b-2 border-transparent transition-colors">
                     First Link
-                </a>
-                <a href="#" class="mr-3 hover:text-black hover:border-black font-medium duration-300 delay-75 p-3 border-b-2 border-transparent transition-colors">
+                </Link>
+                <Link to="#" class="mr-3 hover:text-black hover:border-black font-medium duration-300 delay-75 p-3 border-b-2 border-transparent transition-colors">
                     Second Link
-                </a>
-                <a href="#" class="mr-3 hover:text-black hover:border-black font-medium duration-300 delay-75 p-3 border-b-2 border-transparent transition-colors">
+                </Link>
+                <Link to="#" class="mr-3 hover:text-black hover:border-black font-medium duration-300 delay-75 p-3 border-b-2 border-transparent transition-colors">
                     Third Link
-                </a>
-                <a href="#" class="mr-3 hover:text-black hover:border-black font-medium duration-300 delay-75 p-3 border-b-2 border-transparent transition-colors">
+                </Link>
+                <Link to="#" class="mr-3 hover:text-black hover:border-black font-medium duration-300 delay-75 p-3 border-b-2 border-transparent transition-colors">
                     Fourth Link
-                </a>
+                </Link>
             </nav>
     </header>
 );

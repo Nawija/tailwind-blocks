@@ -110,16 +110,6 @@ export default function NavLeftBar({ showMenu }) {
                         <LuGalleryVertical className={iconStyle} />
                         <span>Blog</span>
                     </Link>
-
-                    <Link
-                        to={"/content/"}
-                        className={
-                            pathname === "/content/" ? activeLink : inActiveLink
-                        }
-                    >
-                        <BiSolidBookContent className={iconStyle} />
-                        <span>Content</span>
-                    </Link>
                     <Link
                         to={"/footer/"}
                         className={

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
-import Seo from "../components/Seo";
+import Layout from "../../components/layout";
+import Seo from "../../components/Seo";
 
-export default function IndexPage() {
+export default function ErrorPage() {
     return (
         <Layout>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 wrapper2xl flex items-center justify-center flex-col font-bold text-3xl text-main w-max">
