@@ -4,12 +4,9 @@ import { Link } from "gatsby";
 
 import { FaHome, FaHeading } from "react-icons/fa";
 import { IoMdNavigate } from "react-icons/io";
-import { RiPagesFill, RiGalleryFill, RiTeamFill } from "react-icons/ri";
-import { LuGalleryVertical, LuGalleryVerticalEnd } from "react-icons/lu";
-import { BiSolidBookContent } from "react-icons/bi";
-import { IoFootstepsSharp } from "react-icons/io5";
+import { RiGalleryFill } from "react-icons/ri";
+import { LuGalleryVerticalEnd } from "react-icons/lu";
 import { TbHandClick } from "react-icons/tb";
-import { IoStatsChart } from "react-icons/io5";
 import { ImPriceTags } from "react-icons/im";
 import { SiHiveBlockchain } from "react-icons/si";
 
@@ -41,17 +38,7 @@ export default function NavLeftBar({ showMenu }) {
                         <FaHome className={iconStyle} />
                         <span>Home</span>
                     </Link>
-                    <Link
-                        to={"/fullpage/"}
-                        className={
-                            pathname === "/fullpage/"
-                                ? activeLink
-                                : inActiveLink
-                        }
-                    >
-                        <RiPagesFill className={iconStyle} />
-                        <span>FullPage</span>
-                    </Link>
+
                     <Link
                         to={"/card/"}
                         className={
@@ -101,15 +88,7 @@ export default function NavLeftBar({ showMenu }) {
                         <ImPriceTags className={iconStyle} />
                         <span>Pricing</span>
                     </Link>
-                    <Link
-                        to={"/blog/"}
-                        className={
-                            pathname === "/blog/" ? activeLink : inActiveLink
-                        }
-                    >
-                        <LuGalleryVertical className={iconStyle} />
-                        <span>Blog</span>
-                    </Link>
+
                     <Link
                         to={"/footer/"}
                         className={
@@ -119,24 +98,7 @@ export default function NavLeftBar({ showMenu }) {
                         <LuGalleryVerticalEnd className={iconStyle} />
                         <span>Footer</span>
                     </Link>
-                    <Link
-                        to={"/team/"}
-                        className={
-                            pathname === "/team/" ? activeLink : inActiveLink
-                        }
-                    >
-                        <RiTeamFill className={iconStyle} />
-                        <span>Team</span>
-                    </Link>
-                    <Link
-                        to={"/step/"}
-                        className={
-                            pathname === "/step/" ? activeLink : inActiveLink
-                        }
-                    >
-                        <IoFootstepsSharp className={iconStyle} />
-                        <span>Step</span>
-                    </Link>
+
                     <Link
                         to={"/cta/"}
                         className={
@@ -145,17 +107,6 @@ export default function NavLeftBar({ showMenu }) {
                     >
                         <TbHandClick className={iconStyle} />
                         <span>CTA</span>
-                    </Link>
-                    <Link
-                        to={"/statictic/"}
-                        className={
-                            pathname === "/statictic/"
-                                ? activeLink
-                                : inActiveLink
-                        }
-                    >
-                        <IoStatsChart className={iconStyle} />
-                        <span>Statistics</span>
                     </Link>
                 </nav>
             </aside>

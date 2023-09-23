@@ -33,7 +33,7 @@ const B = () => (
         <nav class="hidden lg:flex items-center text-base justify-center relative">
             <li className="relative list-none overflow-hidden group p-2 mr-5">
                 <a
-        href      to="#"
+                    href="#"
                     class="hover:text-blue-600 duration-300 font-medium transition-colors"
                 >
                     First Link
@@ -41,19 +41,19 @@ const B = () => (
                 <div className="absolute w-full h-1 bg-blue-300 bottom-0 left-0 z-0 rounded-lg -translate-x-full transition-transform hover:translate-x-0" />
             </li>
             <a
-        href  to="#"
+                href="#"
                 class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
             >
                 Second Link
             </a>
             <a
-        href  to="#"
+                href="#"
                 class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
             >
                 Third Link
             </a>
             <a
-        href  to="#"
+                href="#"
                 class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
             >
                 Fourth Link

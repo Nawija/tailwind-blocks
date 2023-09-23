@@ -33,8 +33,8 @@ const A = () => (
         <nav class="hidden lg:flex items-center text-base justify-center relative">
             <li className="relative list-none overflow-hidden group p-2 mr-5">
                 <a
-                    href
-                    to="#"
+                    href="#"
+                    
                     class="hover:text-blue-600 duration-300 font-medium transition-colors"
                 >
                     First Link
@@ -42,44 +42,27 @@ const A = () => (
                 <div className="absolute w-full h-1 bg-blue-300 bottom-0 left-0 z-0 rounded-lg -translate-x-full transition-transform hover:translate-x-0" />
             </li>
             <a
-                href
-                to="#"
+                href="#"
+                
                 class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
             >
                 Second Link
             </a>
             <a
-                href
-                to="#"
+                href="#"
+                
                 class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
             >
                 Third Link
             </a>
             <a
-                href
-                to="#"
+                href="#"
+                
                 class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
             >
                 Fourth Link
             </a>
         </nav>
-        <button className="bg-blue-600 text-white font-medium px-3 py-1.5 rounded flex items-center justify-center">
-            <span>Button</span>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-4 h-4 ml-2"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                />
-            </svg>
-        </button>
     </header>
     
 );

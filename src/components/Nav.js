@@ -1,10 +1,7 @@
 import React from "react";
 import MenuButton from "./MenuButton";
 
-import { LiaMobileSolid } from "react-icons/lia";
-import { IoMdDesktop, IoMdTabletPortrait } from "react-icons/io";
-
-const Nav = ({ showMenu, handleShowMenu, updateWrapperWidth }) => {
+const Nav = ({ showMenu, handleShowMenu }) => {
     return (
         <>
             <aside
@@ -45,17 +42,6 @@ const Nav = ({ showMenu, handleShowMenu, updateWrapperWidth }) => {
                             Tailwind Blocks
                         </p>
                     </div>
-                </div>
-                <div className="hidden lg:flex items-center justify-center text-3xl space-x-3">
-                    <button onClick={() => updateWrapperWidth("440px")}>
-                        <LiaMobileSolid />
-                    </button>
-                    <button onClick={() => updateWrapperWidth("1060px")}>
-                        <IoMdTabletPortrait />
-                    </button>
-                    <button onClick={() => updateWrapperWidth("100%")}>
-                        <IoMdDesktop />
-                    </button>
                 </div>
             </aside>
         </>

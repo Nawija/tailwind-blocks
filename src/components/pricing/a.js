@@ -91,10 +91,10 @@ const B = () => (
                     </div>
                 </div>
                 <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-                    <div class="h-full p-6 rounded-lg border-2 border-blue-600 flex flex-col relative overflow-hidden">
-                        <span class="bg-blue-600 text-white px-4 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl font-semibold">
+                    <div class="h-full p-6 rounded-lg border-2 border-amber-400 flex flex-col relative overflow-hidden">
+                        <small class="bg-amber-400 text-white px-4 py-1 tracking-wide text-xs absolute right-0 top-0 rounded-bl font-bold">
                             POPULAR
-                        </span>
+                        </small>
                         <small class="text-sm tracking-widest title-font mb-1 font-medium">
                             PRO
                         </small>
@@ -168,7 +168,7 @@ const B = () => (
                             </span>
                             Lorem ipsum dolor sit
                         </p>
-                        <button class="flex items-center mt-auto text-white bg-blue-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-700 transition-colors rounded">
+                        <button class="flex items-center mt-auto text-white bg-amber-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-amber-400 transition-colors rounded">
                             Button
                             <svg
                                 fill="none"

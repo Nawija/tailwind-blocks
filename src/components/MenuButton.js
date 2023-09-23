@@ -9,7 +9,7 @@ function MenuButton({ showMenu, handleShowMenu }) {
                 aria-label="menu"
                 className="text-second bg-white rounded-full mr-4 text-xl p-2 shadow-xl"
             >
-                {showMenu ? <FiMenu /> : <FiArrowLeft />}
+                {showMenu ? <FiArrowLeft /> : <FiMenu />}
             </button>
         </>
     );
