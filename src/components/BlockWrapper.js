@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaCopy, FaCheck } from "react-icons/fa6";
 
 function BlockWrapper({ children, title }) {
     const [copyBtn, setCopyBtn] = useState(false);
+    const childrenElementRef = useRef(null);
 
     function handleCopyBtn() {
-        const childrenElement = document.getElementById("children-element");
-
-        if (childrenElement) {
-            const htmlToCopy = childrenElement.innerHTML;
+        if (childrenElementRef.current) {
+            const htmlToCopy = childrenElementRef.current.innerHTML;
             navigator.clipboard.writeText(htmlToCopy).then(() => {
                 setCopyBtn(true);
                 setTimeout(() => {
@@ -38,7 +37,7 @@ function BlockWrapper({ children, title }) {
                 </div>
             </div>
             <div
-                id="children-element"
+                ref={childrenElementRef}
                 className="bg-white rounded-lg border m-2"
             >
                 {children}
