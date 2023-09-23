@@ -23,7 +23,7 @@ const A = () => (
                                 leggings jianbing microdosing tousled waistcoat.
                             </p>
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0">
+                                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 hover:tracking-wide transition-all cursor-pointer duration-300 text-sm font-medium">
                                     Learn More
                                     <svg
                                         class="w-4 h-4 ml-2"
@@ -90,7 +90,7 @@ const A = () => (
                                 leggings jianbing microdosing tousled waistcoat.
                             </p>
                             <div class="flex items-center flex-wrap">
-                                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0">
+                                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 hover:tracking-wide transition-all cursor-pointer duration-300 text-sm font-medium">
                                     Learn More
                                     <svg
                                         class="w-4 h-4 ml-2"
@@ -157,7 +157,7 @@ const A = () => (
                                 leggings jianbing microdosing tousled waistcoat.
                             </p>
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0">
+                                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 hover:tracking-wide transition-all cursor-pointer duration-300 text-sm font-medium">
                                     Learn More
                                     <svg
                                         class="w-4 h-4 ml-2"

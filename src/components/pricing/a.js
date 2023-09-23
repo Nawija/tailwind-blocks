@@ -92,7 +92,7 @@ const B = () => (
                 </div>
                 <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                     <div class="h-full p-6 rounded-lg border-2 border-amber-400 flex flex-col relative overflow-hidden">
-                        <small class="bg-amber-400 text-white px-4 py-1 tracking-wide text-xs absolute right-0 top-0 rounded-bl font-bold">
+                        <small class="bg-amber-400 animate-pulse text-white px-4 py-1 tracking-wide text-xs absolute right-0 top-0 rounded-bl font-bold">
                             POPULAR
                         </small>
                         <small class="text-sm tracking-widest title-font mb-1 font-medium">
