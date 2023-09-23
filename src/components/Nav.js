@@ -1,22 +1,21 @@
 import React from "react";
 import MenuButton from "./MenuButton";
 
-export default function Nav({ showMenu, handleShowMenu }) {
+import { LiaMobileSolid } from "react-icons/lia";
+import { IoMdDesktop, IoMdTabletPortrait } from "react-icons/io";
+
+const Nav = ({ showMenu, handleShowMenu, updateWrapperWidth }) => {
     return (
         <>
             <aside
-                className={`h-16 text-white fixed top-0 transition-all left-0 w-full z-50 bg-gradient-to-t from-blue-500 to-blue-700 flex items-center px-4 shadow-lg `}
+                className={`h-16 text-white fixed transition-all inset-0 z-50 bg-gradient-to-t from-blue-500 to-blue-700 flex items-center justify-between px-4 shadow-lg `}
             >
                 <div className="flex items-center justify-center">
                     <MenuButton
                         showMenu={showMenu}
                         handleShowMenu={handleShowMenu}
                     />
-                    <svg
-                        className="mr-0.5 w-8"
-                        viewBox="0 0 46 45"
-                        fill="none"
-                    >
+                    <svg className="mr-0.5 w-8" viewBox="0 0 46 45" fill="none">
                         <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
@@ -47,7 +46,20 @@ export default function Nav({ showMenu, handleShowMenu }) {
                         </p>
                     </div>
                 </div>
+                <div className="hidden lg:flex items-center justify-center text-3xl space-x-3">
+                    <button onClick={() => updateWrapperWidth("440px")}>
+                        <LiaMobileSolid />
+                    </button>
+                    <button onClick={() => updateWrapperWidth("1060px")}>
+                        <IoMdTabletPortrait />
+                    </button>
+                    <button onClick={() => updateWrapperWidth("100%")}>
+                        <IoMdDesktop />
+                    </button>
+                </div>
             </aside>
         </>
     );
-}
+};
+
+export default Nav;

@@ -1,14 +1,15 @@
 import React from "react";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiArrowLeft } from "react-icons/fi";
 
-function MenuButton({ handleShowMenu }) {
+function MenuButton({ showMenu, handleShowMenu }) {
     return (
         <>
             <button
                 onClick={handleShowMenu}
+                aria-label="menu"
                 className="text-second bg-white rounded-full mr-4 text-xl p-2 shadow-xl"
             >
-                <FiMenu />
+                {showMenu ? <FiMenu /> : <FiArrowLeft />}
             </button>
         </>
     );

@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "gatsby";
+
 
 const C = () => (
-    <header class="text-gray-800 flex items-center justify-between p-5">
-        <Link
-            to="#"
+    <header class="text-gray-800 flex items-center justify-between p-5 max-w-screen-2xl mx-auto">
+        <a
+            href="#"
             class="flex font-medium items-center justify-center text-gray-900"
         >
             <svg
@@ -22,7 +22,7 @@ const C = () => (
                 />
             </svg>
             <span class="ml-1 ">TailwindBlock</span>
-        </Link>
+        </a>
         <button
             aria-label="Menu"
             class="lg:hidden bg-gray-100 p-2.5 z-50 rounded-lg "
@@ -33,32 +33,32 @@ const C = () => (
         </button>
         <nav class="hidden lg:flex items-center text-base justify-center relative">
             <li className="relative list-none overflow-hidden group p-2 mr-5">
-                <Link
-                    to="#"
+                <a
+        href      to="#"
                     class="hover:text-blue-600 duration-300 font-medium transition-colors"
                 >
                     First Link
-                </Link>
+                </a>
                 <div className="absolute w-full h-1 bg-blue-300 bottom-0 left-0 z-0 rounded-lg -translate-x-full transition-transform hover:translate-x-0" />
             </li>
-            <Link
-                to="#"
+            <a
+        href  to="#"
                 class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
             >
                 Second Link
-            </Link>
-            <Link
-                to="#"
+            </a>
+            <a
+        href  to="#"
                 class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
             >
                 Third Link
-            </Link>
-            <Link
-                to="#"
+            </a>
+            <a
+        href  to="#"
                 class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
             >
                 Fourth Link
-            </Link>
+            </a>
         </nav>
         <button className="bg-blue-600 text-white font-medium px-3 py-1.5 rounded flex items-center justify-center">
             <span>Button</span>

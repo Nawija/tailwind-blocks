@@ -40,7 +40,9 @@ function BlockWrapper({ children, title }) {
             <div
                 id="children-element"
                 className="bg-white rounded-lg border m-2"
-            >{children}</div>
+            >
+                {children}
+            </div>
         </div>
     );
 }
