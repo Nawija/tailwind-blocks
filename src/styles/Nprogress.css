@@ -6,9 +6,9 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: hsla(207, 23%, 46%, 0.02);
+    background: hsla(207, 23%, 46%, 0.04);
     color: #ffd000;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(2px);
 }
 
 /* #nprogress .bar {

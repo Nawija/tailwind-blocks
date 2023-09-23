@@ -9,6 +9,7 @@ import { LuGalleryVerticalEnd } from "react-icons/lu";
 import { TbHandClick } from "react-icons/tb";
 import { ImPriceTags } from "react-icons/im";
 import { SiHiveBlockchain } from "react-icons/si";
+import { BsFillMenuButtonFill } from "react-icons/bs";
 
 export default function NavLeftBar({ showMenu }) {
     const { pathname } = useLocation();
@@ -107,6 +108,15 @@ export default function NavLeftBar({ showMenu }) {
                     >
                         <TbHandClick className={iconStyle} />
                         <span>CTA</span>
+                    </Link>
+                    <Link
+                        to={"/button/"}
+                        className={
+                            pathname === "/button/" ? activeLink : inActiveLink
+                        }
+                    >
+                        <BsFillMenuButtonFill className={iconStyle} />
+                        <span>Button</span>
                     </Link>
                 </nav>
             </aside>
