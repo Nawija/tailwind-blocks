@@ -29,9 +29,17 @@ function BlockWrapper({ children, title }) {
                         className="bg-main p-3 rounded-full border text-second w-max ml-auto"
                     >
                         {copyBtn ? (
-                            <FaCheck className="text-green-500" />
+                            <div className="flex-c text-green-500">
+                                <p className="text-sm mr-2 anim-pading-left">
+                                    Copied
+                                </p>
+                                <FaCheck />
+                            </div>
                         ) : (
-                            <FaCopy />
+                            <div className="flex-c">
+                                <p className="text-sm mr-2">Copy</p>
+                                <FaCopy />
+                            </div>
                         )}
                     </button>
                 </div>

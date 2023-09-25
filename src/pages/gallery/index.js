@@ -10,10 +10,10 @@ export default function GalleryPage() {
     return (
         <Layout>
             <BlockWrapper title="Gallery #1">
-                <A />/
+                <A />
             </BlockWrapper>
-            <BlockWrapper title="Gallery #1">
-                <B />/
+            <BlockWrapper title="Gallery #2">
+                <B />
             </BlockWrapper>
         </Layout>
     );
