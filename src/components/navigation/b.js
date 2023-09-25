@@ -24,7 +24,7 @@ const B = () => (
         </a>
         <button
             aria-label="Menu"
-            class="lg:hidden bg-gray-100 p-2.5 z-50 rounded-lg "
+            class="lg:hidden bg-gray-100 p-2.5 z-50 rounded-lg order-1 lg:order-none"
         >
             <div class="w-4 h-0.5 m-1 rounded-lg bg-blue-600" />
             <div class="w-3 h-0.5 m-1 rounded-lg bg-blue-600" />

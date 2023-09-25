@@ -7,7 +7,7 @@ export default function IndexPage() {
     return (
         <Layout>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 wrapper2xl flex items-center justify-center flex-col font-bold text-3xl text-main w-max">
-                <p className="">Welcome to</p>
+                <p className="animate-bounce">Welcome to</p>
                 <div className="flex items-end justify-center flex-col">
                     <h1 className="text-5xl md:text-6xl w-max lg:text-7xl -tracking-wide p-1 bg-gradient-to-tr from-blue-400 to-blue-700 bg-clip-text text-transparent">
                         Tailwind Blocks
@@ -23,6 +23,7 @@ export default function IndexPage() {
                         </Link>
                     </p>
                 </div>
+                    <p className="mt-6 animate-pulse text-lg">More coming soon</p>
             </div>
         </Layout>
     );

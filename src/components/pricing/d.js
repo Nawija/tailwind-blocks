@@ -1,45 +1,492 @@
 import React from "react";
 
 const D = () => (
-    <header class="text-gray-800 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-                    viewBox="0 0 24 24"
-                >
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
-                <span class="ml-3 text-xl">Tailblocks</span>
-            </a>
-            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-gray-900">First Link</a>
-                <a class="mr-5 hover:text-gray-900">Second Link</a>
-                <a class="mr-5 hover:text-gray-900">Third Link</a>
-                <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-            </nav>
-            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-                Button
-                <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-1"
-                    viewBox="0 0 24 24"
-                >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
+                Pricing
+            </h2>
+
+            <div class="mb-6 grid gap-6 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 lg:gap-8">
+                <div class="flex flex-col overflow-hidden rounded-lg border sm:mt-8">
+                    <div class="h-2 bg-gray-600"></div>
+
+                    <div class="flex flex-1 flex-col p-6 pt-8">
+                        <div class="mb-12">
+                            <div class="mb-2 text-center text-2xl font-bold text-gray-800">
+                                Free Trial
+                            </div>
+
+                            <p class="mb-8 px-8 text-center text-gray-600">
+                                For individuals and organizations who want to
+                                try our system
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        1.000 MB file storage
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        2.000 MB bandwidth per month
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        200 tasks per month
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        Comunity support
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto">
+                            <a
+                                href="#"
+                                class="block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-600 outline-none ring-blue-400 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
+                            >
+                                $0 / Free
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col overflow-hidden rounded-lg border-2 border-blue-600">
+                    <div class="bg-blue-600 py-2 text-center text-sm font-semibold uppercase tracking-widest text-white">
+                        Popular choise
+                    </div>
+
+                    <div class="flex flex-1 flex-col p-6 pt-8">
+                        <div class="mb-12">
+                            <div class="mb-2 text-center text-2xl font-bold text-gray-800">
+                                Team
+                            </div>
+
+                            <p class="mx-auto mb-8 px-8 text-center text-gray-600">
+                                Avanced feaures for Individuals and
+                                organizations
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        Unlimited file storage
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        10 GB bandwidth per month
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        10.000 tasks per month
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        Email support
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        100 Webhooks
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto">
+                            <a
+                                href="#"
+                                class="block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-blue-600 focus-visible:ring active:bg-blue-600 md:text-base"
+                            >
+                                $19
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col overflow-hidden rounded-lg border lg:mt-8">
+                    <div class="h-2 bg-gray-800"></div>
+
+                    <div class="flex flex-1 flex-col p-6 pt-8">
+                        <div class="mb-12">
+                            <div class="mb-2 text-center text-2xl font-bold text-gray-800">
+                                Enterprise
+                            </div>
+
+                            <p class="mx-auto mb-8 px-8 text-center text-gray-600">
+                                Maximum performace for organisations
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        Unlimited file storage
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        Unlimited bandwidth per month
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        1.000.000 tasks per month
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        Email and phone support
+                                    </span>
+                                </div>
+
+                                <div class="flex items-center gap-2">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 shrink-0"
+                                        fill="none"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="8"
+                                            fill="currentColor"
+                                            class="text-gray-200"
+                                        />
+                                        <circle
+                                            cx="8"
+                                            cy="8"
+                                            r="3"
+                                            fill="currentColor"
+                                            class="text-gray-600"
+                                        />
+                                    </svg>
+
+                                    <span class="text-gray-600">
+                                        Unlimited Webhooks
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-auto">
+                            <a
+                                href="#"
+                                class="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base"
+                            >
+                                $49
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 );
 
 export default D;

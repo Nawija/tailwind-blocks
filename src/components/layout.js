@@ -9,16 +9,14 @@ const Layout = ({ children }) => {
         setShowMenu(!showMenu);
     };
     const handleCloseLeftMenu = () => {
-        setShowMenu(setShowMenu(false));
+        if (window.innerWidth <= 1024) {
+            setShowMenu(false);
+        }
     };
-
 
     return (
         <div className="flex">
-            <Nav
-                showMenu={showMenu}
-                handleShowMenu={handleShowMenu}
-            />
+            <Nav showMenu={showMenu} handleShowMenu={handleShowMenu} />
             <NavLeftBar showMenu={showMenu} />
 
             <div

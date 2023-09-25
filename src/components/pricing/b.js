@@ -1,7 +1,140 @@
 import React from "react";
 
 const B = () => (
-    
+    <section class="text-gray-800">
+        <div class="container px-5 lg:px-12 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">
+                    Pricing
+                </h2>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                    Banh mi cornhole echo park skateboard authentic crucifix
+                    neutra tilde lyft biodiesel artisan direct trade mumblecore
+                    3 wolf moon twee
+                </p>
+            </div>
+            <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+                <table class="table-auto w-full text-left whitespace-no-wrap">
+                    <thead>
+                        <tr className="bg-gray-700 text-white">
+                            <th class="px-4 py-3">
+                                Plan
+                            </th>
+                            <th class="px-4 py-3">
+                                Speed
+                            </th>
+                            <th class="px-4 py-3">
+                                Storage
+                            </th>
+                            <th class="px-4 py-3">
+                                Price
+                            </th>
+                            <th class="w-10"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-blue-50">
+                            <td class="px-4 py-3">Start</td>
+                            <td class="px-4 py-3">5 Mb/s</td>
+                            <td class="px-4 py-3">15 GB</td>
+                            <td class="px-4 py-3 text-lg text-gray-900">
+                                Free
+                            </td>
+                            <td class="w-10 text-center">
+                                <input
+                                    name="plan"
+                                    class="cursor-pointer"
+                                    type="radio"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="border-t-2 border-gray-200 px-4 py-3">
+                                Pro
+                            </td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">
+                                25 Mb/s
+                            </td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">
+                                25 GB
+                            </td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
+                                $24
+                            </td>
+                            <td class="border-t-2 border-gray-200 w-10 text-center">
+                                <input
+                                    name="plan"
+                                    class="cursor-pointer"
+                                    type="radio"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="border-t-2 border-gray-200 px-4 py-3">
+                                Business
+                            </td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">
+                                36 Mb/s
+                            </td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3">
+                                40 GB
+                            </td>
+                            <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
+                                $50
+                            </td>
+                            <td class="border-t-2 border-gray-200 w-10 text-center">
+                                <input
+                                    name="plan"
+                                    class="cursor-pointer"
+                                    type="radio"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-blue-50">
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
+                                Exclusive
+                            </td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
+                                48 Mb/s
+                            </td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
+                                120 GB
+                            </td>
+                            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
+                                $72
+                            </td>
+                            <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
+                                <input
+                                    name="plan"
+                                    class="cursor-pointer"
+                                    type="radio"
+                                />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0">
+                    Learn More
+                    <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        class="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+                <button class="flex ml-auto text-white bg-blue-600 border-0 py-2 px-6 transition-colors hover:bg-blue-700 rounded">
+                    Button
+                </button>
+            </div>
+        </div>
+    </section>
 );
 
 export default B;
