@@ -9,6 +9,7 @@ const B = () => (
                     src="https://cdn.pixabay.com/photo/2017/03/06/21/08/maldives-2122547_1280.jpg"
                     alt="hero"
                     class="absolute inset-0 h-full w-full object-cover object-center"
+                    imgClassName="absolute inset-0 h-full w-full object-cover object-center"
                 />
 
                 <div class="absolute inset-0 bg-black opacity-70 mix-blend-multiply"></div>

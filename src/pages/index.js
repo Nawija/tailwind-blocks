@@ -22,8 +22,8 @@ export default function IndexPage() {
                             seovileo
                         </Link>
                     </p>
+                    <p className="mt-2">Code ready to copy!</p>
                 </div>
-                    <p className="mt-2 text-lg">More coming soon</p>
             </div>
         </Layout>
     );
