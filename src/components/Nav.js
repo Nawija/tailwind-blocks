@@ -1,7 +1,9 @@
 import React from "react";
 import MenuButton from "./MenuButton";
 
-const Nav = ({ showMenu, handleShowMenu }) => {
+import { RiShareForwardFill } from "react-icons/ri";
+
+const Nav = ({ showMenu, handleShowMenu, handleShareMenu }) => {
     return (
         <>
             <aside
@@ -43,6 +45,14 @@ const Nav = ({ showMenu, handleShowMenu }) => {
                         </p>
                     </div>
                 </div>
+                <button
+                    onClick={handleShareMenu}
+                    placeholder="share"
+                    className="flex items-center justify-center font-medium text-base p-2"
+                >
+                    <p className="mr-1">Share</p>
+                    <RiShareForwardFill className="text-2xl" />
+                </button>
             </aside>
         </>
     );

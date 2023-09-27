@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import Nav from "./Nav";
 import NavLeftBar from "./NavLeftBar";
+import ShareMenu from "./ShareMenu";
 
 const Layout = ({ children }) => {
     const [showMenu, setShowMenu] = useState(true);
+    const [shareMenu, setShareMenu] = useState(false);
 
-    const handleShowMenu = () => {
-        setShowMenu(!showMenu);
-    };
+    const handleShowMenu = () => setShowMenu(!showMenu);
+    const handleShareMenu = () => setShareMenu(!shareMenu);
+
     const handleCloseLeftMenu = () => {
         if (window.innerWidth <= 1024) {
             setShowMenu(false);
@@ -16,9 +18,16 @@ const Layout = ({ children }) => {
 
     return (
         <div className="flex">
-            <Nav showMenu={showMenu} handleShowMenu={handleShowMenu} />
+            <Nav
+                showMenu={showMenu}
+                handleShowMenu={handleShowMenu}
+                handleShareMenu={handleShareMenu}
+            />
             <NavLeftBar showMenu={showMenu} />
-
+            <ShareMenu
+                shareMenu={shareMenu}
+                handleShareMenu={handleShareMenu}
+            />
             <div
                 onClick={handleCloseLeftMenu}
                 className={`w-full bg-gray-100 min-h-screen relative pt-[4.5rem] pb-3 transition-all sm:px-4 ${

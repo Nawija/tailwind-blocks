@@ -9,6 +9,7 @@ import { LuGalleryVerticalEnd } from "react-icons/lu";
 import { TbHandClick } from "react-icons/tb";
 import { ImPriceTags } from "react-icons/im";
 import { SiHiveBlockchain } from "react-icons/si";
+import { BiSolidBookContent } from "react-icons/bi";
 import { BsFillMenuButtonFill } from "react-icons/bs";
 
 export default function NavLeftBar({ showMenu }) {
@@ -98,6 +99,15 @@ export default function NavLeftBar({ showMenu }) {
                     >
                         <LuGalleryVerticalEnd className={iconStyle} />
                         <span>Footer</span>
+                    </Link>
+                    <Link
+                        to={"/blog/"}
+                        className={
+                            pathname === "/blog/" ? activeLink : inActiveLink
+                        }
+                    >
+                        <BiSolidBookContent className={iconStyle} />
+                        <span>Blog</span>
                     </Link>
 
                     <Link
