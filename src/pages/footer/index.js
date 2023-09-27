@@ -3,18 +3,16 @@ import Layout from "../../components/layout";
 import Seo from "../../components/Seo";
 
 import BlockWrapper from "../../components/BlockWrapper";
-import A from "../../components/footer/a";
-import B from "../../components/footer/b";
+import FooterComponents from "../../components/footer";
 
 export default function FooterPage() {
     return (
         <Layout>
-            <BlockWrapper title="Footer #1">
-                <A />
-            </BlockWrapper>
-            <BlockWrapper title="Footer #2">
-                <B />
-            </BlockWrapper>
+            {Object.entries(FooterComponents).map(([key, Component], index) => (
+                <BlockWrapper key={index} title={`Footer #${index + 1}`}>
+                    <Component />
+                </BlockWrapper>
+            ))}
         </Layout>
     );
 }

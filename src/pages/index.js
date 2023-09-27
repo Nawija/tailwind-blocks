@@ -23,7 +23,7 @@ export default function IndexPage() {
                         </Link>
                     </p>
                 </div>
-                    <p className="mt-6 animate-pulse text-lg">More coming soon</p>
+                    <p className="mt-2 text-lg">More coming soon</p>
             </div>
         </Layout>
     );

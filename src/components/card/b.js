@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const B = () => (
     <section class="text-gray-800">
@@ -21,7 +22,7 @@ const B = () => (
             <div class="flex flex-wrap -m-4">
                 <div class="xl:w-1/4 md:w-1/2 p-4">
                     <div class="bg-gray-100 p-4 rounded-lg">
-                        <img
+                        <StaticImage
                             class="h-40 rounded w-full object-cover object-center mb-6"
                             src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg"
                             alt="content"
@@ -40,7 +41,7 @@ const B = () => (
                 </div>
                 <div class="xl:w-1/4 md:w-1/2 p-4">
                     <div class="bg-gray-100 p-4 rounded-lg">
-                        <img
+                        <StaticImage
                             class="h-40 rounded w-full object-cover object-center mb-6"
                             src="https://cdn.pixabay.com/photo/2015/11/15/14/30/veligandu-island-1044366_1280.jpg"
                             alt="content"
@@ -59,7 +60,7 @@ const B = () => (
                 </div>
                 <div class="xl:w-1/4 md:w-1/2 p-4">
                     <div class="bg-gray-100 p-4 rounded-lg">
-                        <img
+                        <StaticImage
                             class="h-40 rounded w-full object-cover object-center mb-6"
                             src="https://cdn.pixabay.com/photo/2018/03/12/20/07/maldives-3220702_1280.jpg"
                             alt="content"
@@ -78,7 +79,7 @@ const B = () => (
                 </div>
                 <div class="xl:w-1/4 md:w-1/2 p-4">
                     <div class="bg-gray-100 p-4 rounded-lg">
-                        <img
+                        <StaticImage
                             class="h-40 rounded w-full object-cover object-center mb-6"
                             src="https://cdn.pixabay.com/photo/2015/03/09/18/34/beach-666122_1280.jpg"
                             alt="content"

@@ -3,18 +3,16 @@ import Layout from "../../components/layout";
 import Seo from "../../components/Seo";
 
 import BlockWrapper from "../../components/BlockWrapper";
-import A from "../../components/card/a";
-import B from "../../components/card/b";
+import CardComponents from "../../components/card";
 
 export default function CardPage() {
     return (
         <Layout>
-            <BlockWrapper title="Card #1">
-                <A />
-            </BlockWrapper>
-            <BlockWrapper title="Card #2">
-                <B />
-            </BlockWrapper>
+            {Object.entries(CardComponents).map(([key, Component], index) => (
+                    <BlockWrapper key={index} title={`Card #${index + 1}`}>
+                        <Component />
+                    </BlockWrapper>
+                ))}
         </Layout>
     );
 }

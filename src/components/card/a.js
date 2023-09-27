@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const A = () => (
     <section class="text-gray-800 max-w-screen-xl mx-auto">
@@ -6,7 +7,7 @@ const A = () => (
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-100 rounded-lg overflow-hidden">
-                        <img
+                        <StaticImage
                             class="h-48 w-full object-cover object-center"
                             src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="blog"
@@ -73,7 +74,7 @@ const A = () => (
                 </div>
                 <div class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-100 rounded-lg overflow-hidden">
-                        <img
+                        <StaticImage
                             class="h-48 w-full object-cover object-center"
                             src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="blog"
@@ -140,7 +141,7 @@ const A = () => (
                 </div>
                 <div class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-100 rounded-lg overflow-hidden">
-                        <img
+                        <StaticImage
                             class="h-48 w-full object-cover object-center"
                             src="https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="blog"

@@ -3,18 +3,16 @@ import Layout from "../../components/layout";
 import Seo from "../../components/Seo";
 
 import BlockWrapper from "../../components/BlockWrapper";
-import A from "../../components/hero/a";
-import B from "../../components/hero/b";
+import HeroComponents from "../../components/hero";
 
 export default function HeroPage() {
     return (
         <Layout>
-            <BlockWrapper title="Hero #1">
-                <A />
-            </BlockWrapper>
-            <BlockWrapper title="Hero #2">
-                <B />
-            </BlockWrapper>
+            {Object.entries(HeroComponents).map(([key, Component], index) => (
+                <BlockWrapper key={index} title={`Hero #${index + 1}`}>
+                    <Component />
+                </BlockWrapper>
+            ))}
         </Layout>
     );
 }

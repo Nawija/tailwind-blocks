@@ -3,22 +3,16 @@ import Layout from "../../components/layout";
 import Seo from "../../components/Seo";
 
 import BlockWrapper from "../../components/BlockWrapper";
-import A from "../../components/cta/a";
-import B from "../../components/cta/b";
-import C from "../../components/cta/c";
+import CtaComponents from "../../components/cta";
 
-export default function HeroPage() {
+export default function CtaPage() {
     return (
         <Layout>
-            <BlockWrapper title="CTA #1">
-                <A />
-            </BlockWrapper>
-            <BlockWrapper title="CTA #2">
-                <B />
-            </BlockWrapper>
-            <BlockWrapper title="CTA #2">
-                <C />
-            </BlockWrapper>
+            {Object.entries(CtaComponents).map(([key, Component], index) => (
+                <BlockWrapper key={index} title={`CTA #${index + 1}`}>
+                    <Component />
+                </BlockWrapper>
+            ))}
         </Layout>
     );
 }

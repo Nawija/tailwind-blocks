@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const B = () => (
     <div class="bg-white py-6 sm:py-8 lg:py-12">
@@ -29,7 +30,7 @@ const B = () => (
                     href="#"
                     class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
                 >
-                    <img
+                    <StaticImage
                         src="https://cdn.pixabay.com/photo/2013/10/28/22/44/ocean-202074_1280.jpg"
                         alt="gallery"
                         class="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
@@ -46,7 +47,7 @@ const B = () => (
                     href="#"
                     class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
                 >
-                    <img
+                    <StaticImage
                         src="https://cdn.pixabay.com/photo/2018/03/14/21/45/sunset-3226467_1280.jpg"
                         alt="gallery"
                         class="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
@@ -63,7 +64,7 @@ const B = () => (
                     href="#"
                     class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
                 >
-                    <img
+                    <StaticImage
                         src="https://cdn.pixabay.com/photo/2017/03/13/20/13/fish-2141022_1280.jpg"
                         alt="gallery"
                         class="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
@@ -80,7 +81,7 @@ const B = () => (
                     href="#"
                     class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
                 >
-                    <img
+                    <StaticImage
                         src="https://cdn.pixabay.com/photo/2015/10/23/11/10/sea-1002804_1280.jpg"
                         alt="gallery"
                         class="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"

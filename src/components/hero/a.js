@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const A = () => (
     <section class="text-gray-800">
@@ -26,7 +27,7 @@ const A = () => (
                 </div>
             </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-96">
-                <img
+                <StaticImage
                     class="object-cover object-center rounded-lg w-full h-full"
                     alt="hero tailwind blocks"
                     src="https://images.pexels.com/photos/1430673/pexels-photo-1430673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
