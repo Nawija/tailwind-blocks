@@ -1,15 +1,14 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 
 const B = () => (
     <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
         <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
             <section class="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
-                <StaticImage
+                <img
                     src="https://cdn.pixabay.com/photo/2017/03/06/21/08/maldives-2122547_1280.jpg"
+                    loading="eager"
                     alt="hero"
                     class="absolute inset-0 h-full w-full object-cover object-center"
-                    imgClassName="absolute inset-0 h-full w-full object-cover object-center"
                 />
 
                 <div class="absolute inset-0 bg-black opacity-70 mix-blend-multiply"></div>

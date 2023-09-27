@@ -1,5 +1,4 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 
 const A = () => (
     <section class="text-gray-800">
@@ -20,7 +19,8 @@ const A = () => (
             <div class="flex flex-wrap -m-4">
                 <div class="lg:w-1/3 sm:w-1/2 p-4">
                     <div class="flex relative rounded overflow-hidden">
-                        <StaticImage
+                        <img
+                            loading="eager"
                             alt="gallery"
                             class="absolute inset-0 w-full h-full object-cover object-center"
                             src="https://images.pexels.com/photos/1024982/pexels-photo-1024982.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -41,7 +41,8 @@ const A = () => (
                 </div>
                 <div class="lg:w-1/3 sm:w-1/2 p-4">
                     <div class="flex relative rounded overflow-hidden">
-                        <StaticImage
+                        <img
+                            loading="eager"
                             alt="gallery"
                             class="absolute inset-0 w-full h-full object-cover object-center"
                             src="https://images.pexels.com/photos/1430671/pexels-photo-1430671.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -62,7 +63,8 @@ const A = () => (
                 </div>
                 <div class="lg:w-1/3 sm:w-1/2 p-4">
                     <div class="flex relative rounded overflow-hidden">
-                        <StaticImage
+                        <img
+                            loading="eager"
                             alt="gallery"
                             class="absolute inset-0 w-full h-full object-cover object-center"
                             src="https://images.pexels.com/photos/2525899/pexels-photo-2525899.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -83,7 +85,8 @@ const A = () => (
                 </div>
                 <div class="lg:w-1/3 sm:w-1/2 p-4">
                     <div class="flex relative rounded overflow-hidden">
-                        <StaticImage
+                        <img
+                            loading="eager"
                             alt="gallery"
                             class="absolute inset-0 w-full h-full object-cover object-center"
                             src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -104,7 +107,8 @@ const A = () => (
                 </div>
                 <div class="lg:w-1/3 sm:w-1/2 p-4">
                     <div class="flex relative rounded overflow-hidden">
-                        <StaticImage
+                        <img
+                            loading="eager"
                             alt="gallery"
                             class="absolute inset-0 w-full h-full object-cover object-center"
                             src="https://images.pexels.com/photos/1024989/pexels-photo-1024989.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -125,7 +129,8 @@ const A = () => (
                 </div>
                 <div class="lg:w-1/3 sm:w-1/2 p-4">
                     <div class="flex relative rounded overflow-hidden">
-                        <StaticImage
+                        <img
+                            loading="eager"
                             alt="gallery"
                             class="absolute inset-0 w-full h-full object-cover object-center"
                             src="https://images.pexels.com/photos/3601439/pexels-photo-3601439.jpeg?auto=compress&cs=tinysrgb&w=1600"
