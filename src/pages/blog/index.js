@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
 import Seo from "../../components/Seo";
-
 import BlockWrapper from "../../components/BlockWrapper";
 import BlogComponents from "../../components/blog";
 
