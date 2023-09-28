@@ -9,6 +9,7 @@ const Layout = ({ children }) => {
 
     const handleShowMenu = () => setShowMenu(!showMenu);
     const handleShareMenu = () => setShareMenu(!shareMenu);
+    const handleShareMenuClose = () => setShareMenu(false);
 
     const handleCloseLeftMenu = () => {
         if (window.innerWidth <= 1024) {
@@ -26,7 +27,7 @@ const Layout = ({ children }) => {
             <NavLeftBar showMenu={showMenu} />
             <ShareMenu
                 shareMenu={shareMenu}
-                handleShareMenu={handleShareMenu}
+                handleShareMenuClose={handleShareMenuClose}
             />
             <div
                 onClick={handleCloseLeftMenu}
