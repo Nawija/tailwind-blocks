@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const B = () => (
     <section class="text-gray-800">
@@ -25,7 +26,7 @@ const B = () => (
                                 Photo booth fam kinfolk cold-pressed sriracha
                                 leggings jianbing microdosing tousled waistcoat.
                             </p>
-                            <a class="inline-flex items-center">
+                            <Link class="inline-flex items-center">
                                 <img
                                     alt="blog"
                                     src="https://dummyimage.com/103x103"
@@ -36,7 +37,7 @@ const B = () => (
                                         Alper Kamu
                                     </span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -61,7 +62,7 @@ const B = () => (
                                 Photo booth fam kinfolk cold-pressed sriracha
                                 leggings jianbing microdosing tousled waistcoat.
                             </p>
-                            <a class="inline-flex items-center">
+                            <Link class="inline-flex items-center">
                                 <img
                                     alt="blog"
                                     src="https://dummyimage.com/102x102"
@@ -72,7 +73,7 @@ const B = () => (
                                         Holden Caulfield
                                     </span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -97,7 +98,7 @@ const B = () => (
                                 Photo booth fam kinfolk cold-pressed sriracha
                                 leggings jianbing microdosing tousled waistcoat.
                             </p>
-                            <a class="inline-flex items-center">
+                            <Link class="inline-flex items-center">
                                 <img
                                     alt="blog"
                                     src="https://dummyimage.com/101x101"
@@ -108,7 +109,7 @@ const B = () => (
                                         Henry Letham
                                     </span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

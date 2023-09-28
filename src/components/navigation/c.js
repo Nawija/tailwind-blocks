@@ -1,11 +1,9 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const C = () => (
     <header class="text-gray-800 flex items-center justify-between p-5 max-w-screen-2xl mx-auto">
-        <a
-            href="#"
-            class="flex font-medium lg:hidden items-center justify-center text-gray-900 hover:scale-110 transition-transform duration-300"
-        >
+        <Link class="flex font-medium lg:hidden items-center justify-center text-gray-900 hover:scale-110 transition-transform duration-300">
             <svg
                 class="w-9 h-9 p-2 text-white rounded bg-blue-600"
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +19,7 @@ const C = () => (
                 />
             </svg>
             <span class="ml-1 ">TailwindBlock</span>
-        </a>
+        </Link>
         <button
             aria-label="Menu"
             class="lg:hidden bg-gray-100 p-2.5 z-50 rounded-lg "
@@ -32,25 +30,16 @@ const C = () => (
         </button>
         <nav class="hidden lg:flex items-center text-base justify-around w-full">
             <div>
-                <a
-                    href="#"
-                    class="hover:text-blue-600 font-medium p-2 mr-5 transition-colors"
-                >
+                <Link class="hover:text-blue-600 font-medium p-2 mr-5 transition-colors">
                     First Link
-                </a>
+                </Link>
 
-                <a
-                    href="#"
-                    class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors"
-                >
+                <Link class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors">
                     Second Link
-                </a>
+                </Link>
             </div>
 
-            <a
-                href="#"
-                class="flex font-medium items-center justify-center text-gray-900 hover:scale-110 transition-transform duration-300"
-            >
+            <Link class="flex font-medium items-center justify-center text-gray-900 hover:scale-110 transition-transform duration-300">
                 <svg
                     class="w-9 h-9 p-2 text-white rounded bg-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
@@ -66,21 +55,15 @@ const C = () => (
                     />
                 </svg>
                 <span class="ml-1 ">TailwindBlock</span>
-            </a>
+            </Link>
 
             <div>
-                <a
-                    href="#"
-                    class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors"
-                >
+                <Link class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors">
                     Third Link
-                </a>
-                <a
-                    href="#"
-                    class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors"
-                >
+                </Link>
+                <Link class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors">
                     Fourth Link
-                </a>
+                </Link>
             </div>
         </nav>
     </header>

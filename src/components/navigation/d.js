@@ -1,11 +1,9 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const D = () => (
     <header class="text-gray-800 flex items-center justify-between p-5 max-w-screen-2xl mx-auto">
-        <a
-            href="#"
-            class="flex flex-col lg:px-20 font-medium lg:font-semibold lg:hidden items-center justify-center text-gray-900 hover:scale-110 transition-transform duration-300"
-        >
+        <Link class="flex flex-col lg:px-20 font-medium lg:font-semibold lg:hidden items-center justify-center text-gray-900 hover:scale-110 transition-transform duration-300">
             <svg
                 class="w-8 h-8 lg:w-10 lg:h-10 p-2 text-white rounded bg-blue-600"
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +19,7 @@ const D = () => (
                 />
             </svg>
             <span class="text-[12px]">TailwindBlock</span>
-        </a>
+        </Link>
         <button
             aria-label="Menu"
             class="lg:hidden bg-gray-100 p-2.5 z-50 rounded-lg "
@@ -31,24 +29,15 @@ const D = () => (
             <div class="w-4 h-0.5 m-1 rounded-lg bg-blue-600" />
         </button>
         <nav class="hidden lg:flex items-center text-base justify-center w-full">
-            <a
-                href="#"
-                class="hover:text-blue-600 font-medium p-2 mr-5 transition-colors"
-            >
+            <Link class="hover:text-blue-600 font-medium p-2 mr-5 transition-colors">
                 First Link
-            </a>
+            </Link>
 
-            <a
-                href="#"
-                class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors"
-            >
+            <Link class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors">
                 Second Link
-            </a>
+            </Link>
 
-            <a
-                href="#"
-                class="flex flex-col px-20 font-bold items-center justify-center text-gray-900 hover:scale-110 transition-transform duration-300"
-            >
+            <Link class="flex flex-col px-20 font-bold items-center justify-center text-gray-900 hover:scale-110 transition-transform duration-300">
                 <svg
                     class="w-10 h-10 p-2 text-white rounded bg-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
@@ -64,20 +53,14 @@ const D = () => (
                     />
                 </svg>
                 <span class="ml-1 ">TailwindBlock</span>
-            </a>
+            </Link>
 
-            <a
-                href="#"
-                class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors"
-            >
+            <Link class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors">
                 Third Link
-            </a>
-            <a
-                href="#"
-                class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors"
-            >
+            </Link>
+            <Link class="mr-5 hover:text-blue-600 font-medium p-2 transition-colors">
                 Fourth Link
-            </a>
+            </Link>
         </nav>
     </header>
 );

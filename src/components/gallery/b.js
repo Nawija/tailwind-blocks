@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 const B = () => (
     <div class="bg-white py-6 sm:py-8 lg:py-12">
@@ -17,19 +17,13 @@ const B = () => (
                     </p>
                 </div>
 
-                <a
-                    href="#"
-                    class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-800 outline-none ring-blue-400 transition-colors hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base"
-                >
+                <Link class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-800 outline-none ring-blue-400 transition-colors hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
                     Button
-                </a>
+                </Link>
             </div>
 
             <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-                <a
-                    href="#"
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-                >
+                <Link class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                     <img
                         src="https://cdn.pixabay.com/photo/2013/10/28/22/44/ocean-202074_1280.jpg"
                         alt="gallery"
@@ -41,12 +35,9 @@ const B = () => (
                     <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
                         Tailwind
                     </span>
-                </a>
+                </Link>
 
-                <a
-                    href="#"
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
-                >
+                <Link class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
                     <img
                         src="https://cdn.pixabay.com/photo/2018/03/14/21/45/sunset-3226467_1280.jpg"
                         alt="gallery"
@@ -58,12 +49,9 @@ const B = () => (
                     <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
                         Picture
                     </span>
-                </a>
+                </Link>
 
-                <a
-                    href="#"
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80"
-                >
+                <Link class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
                     <img
                         src="https://cdn.pixabay.com/photo/2017/03/13/20/13/fish-2141022_1280.jpg"
                         alt="gallery"
@@ -75,12 +63,9 @@ const B = () => (
                     <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
                         Gallery
                     </span>
-                </a>
+                </Link>
 
-                <a
-                    href="#"
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
-                >
+                <Link class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
                     <img
                         src="https://cdn.pixabay.com/photo/2015/10/23/11/10/sea-1002804_1280.jpg"
                         alt="gallery"
@@ -92,7 +77,7 @@ const B = () => (
                     <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">
                         Photo
                     </span>
-                </a>
+                </Link>
             </div>
         </div>
     </div>

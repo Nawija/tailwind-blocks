@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const C = () => (
     <section class="text-gray-800">
@@ -28,7 +29,7 @@ const C = () => (
                                 dollar toast vegan taxidermy. Gastropub indxgo
                                 juice poutine.
                             </p>
-                            <a class="mt-3 text-blue-500 inline-flex items-center">
+                            <Link class="mt-3 text-blue-500 inline-flex items-center">
                                 Learn More
                                 <svg
                                     fill="none"
@@ -41,7 +42,7 @@ const C = () => (
                                 >
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -70,7 +71,7 @@ const C = () => (
                                 dollar toast vegan taxidermy. Gastropub indxgo
                                 juice poutine.
                             </p>
-                            <a class="mt-3 text-blue-500 inline-flex items-center">
+                            <Link class="mt-3 text-blue-500 inline-flex items-center">
                                 Learn More
                                 <svg
                                     fill="none"
@@ -83,7 +84,7 @@ const C = () => (
                                 >
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

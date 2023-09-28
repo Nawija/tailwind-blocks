@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const B = () => (
     <section class="text-gray-800">
@@ -17,18 +18,10 @@ const B = () => (
                 <table class="table-auto w-full text-left whitespace-no-wrap">
                     <thead>
                         <tr className="bg-gray-700 text-white">
-                            <th class="px-4 py-3">
-                                Plan
-                            </th>
-                            <th class="px-4 py-3">
-                                Speed
-                            </th>
-                            <th class="px-4 py-3">
-                                Storage
-                            </th>
-                            <th class="px-4 py-3">
-                                Price
-                            </th>
+                            <th class="px-4 py-3">Plan</th>
+                            <th class="px-4 py-3">Speed</th>
+                            <th class="px-4 py-3">Storage</th>
+                            <th class="px-4 py-3">Price</th>
                             <th class="w-10"></th>
                         </tr>
                     </thead>
@@ -115,7 +108,7 @@ const B = () => (
                 </table>
             </div>
             <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
-                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0">
+                <Link class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0">
                     Learn More
                     <svg
                         fill="none"
@@ -128,7 +121,7 @@ const B = () => (
                     >
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
-                </a>
+                </Link>
                 <button class="flex ml-auto text-white bg-blue-600 border-0 py-2 px-6 transition-colors hover:bg-blue-700 rounded">
                     Button
                 </button>

@@ -1,11 +1,9 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const A = () => (
     <header class="text-gray-800 flex items-center justify-between p-5 mx-auto">
-        <a
-            href="#"
-            class="flex font-medium items-center justify-center text-gray-900"
-        >
+        <Link class="flex font-medium items-center justify-center text-gray-900">
             <svg
                 class="w-9 h-9 p-2 text-white rounded bg-blue-600"
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +19,7 @@ const A = () => (
                 />
             </svg>
             <span class="ml-1 ">TailwindBlock</span>
-        </a>
+        </Link>
         <button
             aria-label="Menu"
             class="lg:hidden bg-gray-100 p-2.5 z-50 rounded-lg "
@@ -32,39 +30,22 @@ const A = () => (
         </button>
         <nav class="hidden lg:flex items-center text-base justify-center relative">
             <li className="relative list-none overflow-hidden group p-2 mr-5">
-                <a
-                    href="#"
-                    
-                    class="hover:text-blue-600 duration-300 font-medium transition-colors"
-                >
+                <Link class="hover:text-blue-600 duration-300 font-medium transition-colors">
                     First Link
-                </a>
+                </Link>
                 <div className="absolute w-full h-1 bg-blue-300 bottom-0 left-0 z-0 rounded-lg -translate-x-full transition-transform hover:translate-x-0" />
             </li>
-            <a
-                href="#"
-                
-                class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
-            >
+            <Link class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors">
                 Second Link
-            </a>
-            <a
-                href="#"
-                
-                class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
-            >
+            </Link>
+            <Link class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors">
                 Third Link
-            </a>
-            <a
-                href="#"
-                
-                class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors"
-            >
+            </Link>
+            <Link class="mr-5 hover:text-blue-600 duration-300 font-medium p-2 transition-colors">
                 Fourth Link
-            </a>
+            </Link>
         </nav>
     </header>
-    
 );
 
 export default A;

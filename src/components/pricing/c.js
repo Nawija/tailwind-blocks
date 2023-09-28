@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const C = () => (
     <section class="bg-white py-6 sm:py-8 lg:py-12">
@@ -115,12 +116,9 @@ const C = () => (
                             <span class="text-gray-500">per user/month</span>
                         </div>
 
-                        <a
-                            href="#"
-                            class="block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-blue-600 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
-                        >
+                        <Link class="block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-blue-600 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
                             Join for free
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -253,12 +251,9 @@ const C = () => (
                             <span class="text-gray-500">per user/month</span>
                         </div>
 
-                        <a
-                            href="#"
-                            class="block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-blue-600 focus-visible:ring active:bg-blue-600 md:text-base"
-                        >
+                        <Link class="block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-blue-600 focus-visible:ring active:bg-blue-600 md:text-base">
                             Continue with Team
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -389,24 +384,18 @@ const C = () => (
                             <span class="text-gray-500">per user/month</span>
                         </div>
 
-                        <a
-                            href="#"
-                            class="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base"
-                        >
+                        <Link class="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">
                             Contact Sales
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
 
             <div class="text-center text-sm text-gray-500 sm:text-base">
                 Need help deciding?{" "}
-                <a
-                    href="#"
-                    class="text-gray-500 underline transition duration-100 hover:text-blue-600 active:text-blue-600"
-                >
+                <Link class="text-gray-500 underline transition duration-100 hover:text-blue-600 active:text-blue-600">
                     Get in touch
-                </a>
+                </Link>
                 .
             </div>
         </div>

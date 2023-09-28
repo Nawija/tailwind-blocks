@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const E = () => (
     <section class="bg-white py-6 sm:py-8 lg:py-12">
@@ -37,12 +38,9 @@ const E = () => (
                             </svg>
                         </div>
 
-                        <a
-                            href="#"
-                            class="block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-600 outline-none ring-blue-400 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
-                        >
+                        <Link class="block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-600 outline-none ring-blue-400 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
                             Select Free
-                        </a>
+                        </Link>
                     </div>
 
                     <div class="flex-1 space-y-3 rounded-lg bg-gray-100 px-4 py-6">
@@ -165,12 +163,9 @@ const E = () => (
                             </svg>
                         </div>
 
-                        <a
-                            href="#"
-                            class="block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-blue-600 focus-visible:ring active:bg-blue-600 md:text-base"
-                        >
+                        <Link class="block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-blue-600 focus-visible:ring active:bg-blue-600 md:text-base">
                             Select Team
-                        </a>
+                        </Link>
                     </div>
 
                     <div class="flex-1 space-y-3 rounded-lg bg-gray-100 px-4 py-6">
@@ -306,12 +301,9 @@ const E = () => (
                             </svg>
                         </div>
 
-                        <a
-                            href="#"
-                            class="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base"
-                        >
+                        <Link class="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-600 transition duration-100 hover:bg-gray-700 focus-visible:ring active:bg-gray-600 md:text-base">
                             Select Enterprise
-                        </a>
+                        </Link>
                     </div>
 
                     <div class="flex-1 space-y-3 rounded-lg bg-gray-100 px-4 py-6">

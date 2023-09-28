@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const B = () => (
     <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
@@ -22,19 +23,13 @@ const B = () => (
                     </h1>
 
                     <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
-                        <a
-                            href="#"
-                            class="inline-block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:bg-blue-700 md:text-base"
-                        >
+                        <Link class="inline-block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:bg-blue-700 md:text-base">
                             Start now
-                        </a>
+                        </Link>
 
-                        <a
-                            href="#"
-                            class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-blue-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
-                        >
+                        <Link class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-blue-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
                             Take tour
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>

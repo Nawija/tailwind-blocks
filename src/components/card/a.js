@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 const A = () => (
     <section class="text-gray-800 max-w-screen-xl mx-auto">
@@ -7,7 +7,8 @@ const A = () => (
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-100 rounded-lg overflow-hidden">
-                        <StaticImage
+                        <img
+                            loading="eager"
                             class="h-48 w-full object-cover object-center"
                             src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="blog"
@@ -24,7 +25,7 @@ const A = () => (
                                 leggings jianbing microdosing tousled waistcoat.
                             </p>
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 hover:tracking-wide transition-all cursor-pointer duration-300 text-sm font-medium">
+                                <Link class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 hover:tracking-wide transition-all cursor-pointer duration-300 text-sm font-medium">
                                     Learn More
                                     <svg
                                         class="w-4 h-4 ml-2"
@@ -38,7 +39,7 @@ const A = () => (
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5l7 7-7 7"></path>
                                     </svg>
-                                </a>
+                                </Link>
                                 <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                     <svg
                                         class="w-4 h-4 mr-1"
@@ -74,7 +75,7 @@ const A = () => (
                 </div>
                 <div class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-100 rounded-lg overflow-hidden">
-                        <StaticImage
+                        <img
                             class="h-48 w-full object-cover object-center"
                             src="https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="blog"
@@ -91,7 +92,7 @@ const A = () => (
                                 leggings jianbing microdosing tousled waistcoat.
                             </p>
                             <div class="flex items-center flex-wrap">
-                                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 hover:tracking-wide transition-all cursor-pointer duration-300 text-sm font-medium">
+                                <Link class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 hover:tracking-wide transition-all cursor-pointer duration-300 text-sm font-medium">
                                     Learn More
                                     <svg
                                         class="w-4 h-4 ml-2"
@@ -105,7 +106,7 @@ const A = () => (
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5l7 7-7 7"></path>
                                     </svg>
-                                </a>
+                                </Link>
                                 <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                     <svg
                                         class="w-4 h-4 mr-1"
@@ -141,7 +142,7 @@ const A = () => (
                 </div>
                 <div class="p-4 md:w-1/3">
                     <div class="h-full border-2 border-gray-100 rounded-lg overflow-hidden">
-                        <StaticImage
+                        <img
                             class="h-48 w-full object-cover object-center"
                             src="https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="blog"
@@ -158,7 +159,7 @@ const A = () => (
                                 leggings jianbing microdosing tousled waistcoat.
                             </p>
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 hover:tracking-wide transition-all cursor-pointer duration-300 text-sm font-medium">
+                                <Link class="text-blue-600 inline-flex items-center md:mb-2 lg:mb-0 hover:tracking-wide transition-all cursor-pointer duration-300 text-sm font-medium">
                                     Learn More
                                     <svg
                                         class="w-4 h-4 ml-2"
@@ -172,7 +173,7 @@ const A = () => (
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5l7 7-7 7"></path>
                                     </svg>
-                                </a>
+                                </Link>
                                 <span class="text-gray-500 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                     <svg
                                         class="w-4 h-4 mr-1"

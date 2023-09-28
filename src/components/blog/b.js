@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const B = () => (
     <section class="text-gray-800 overflow-hidden">
@@ -24,7 +25,7 @@ const B = () => (
                             selfies, poke vaporware kombucha lumbersexual pork
                             belly polaroid hoodie portland craft beer.
                         </p>
-                        <a class="text-blue-500 inline-flex items-center mt-4">
+                        <Link class="text-blue-500 inline-flex items-center mt-4">
                             Learn More
                             <svg
                                 class="w-4 h-4 ml-2"
@@ -38,7 +39,7 @@ const B = () => (
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5l7 7-7 7"></path>
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div class="py-8 flex flex-wrap md:flex-nowrap">
@@ -61,7 +62,7 @@ const B = () => (
                             selfies, poke vaporware kombucha lumbersexual pork
                             belly polaroid hoodie portland craft beer.
                         </p>
-                        <a class="text-blue-500 inline-flex items-center mt-4">
+                        <Link class="text-blue-500 inline-flex items-center mt-4">
                             Learn More
                             <svg
                                 class="w-4 h-4 ml-2"
@@ -75,7 +76,7 @@ const B = () => (
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5l7 7-7 7"></path>
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div class="py-8 flex flex-wrap md:flex-nowrap">
@@ -96,7 +97,7 @@ const B = () => (
                             selfies, poke vaporware kombucha lumbersexual pork
                             belly polaroid hoodie portland craft beer.
                         </p>
-                        <a class="text-blue-500 inline-flex items-center mt-4">
+                        <Link class="text-blue-500 inline-flex items-center mt-4">
                             Learn More
                             <svg
                                 class="w-4 h-4 ml-2"
@@ -110,7 +111,7 @@ const B = () => (
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5l7 7-7 7"></path>
                             </svg>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

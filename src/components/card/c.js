@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const C = () => (
     <section class="text-gray-800">
@@ -16,7 +17,7 @@ const C = () => (
                             Photo booth fam kinfolk cold-pressed sriracha
                             leggings jianbing microdosing tousled waistcoat.
                         </p>
-                        <a class="text-blue-600 inline-flex items-center">
+                        <Link class="text-blue-600 inline-flex items-center">
                             Learn More
                             <svg
                                 class="w-4 h-4 ml-2"
@@ -30,7 +31,7 @@ const C = () => (
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5l7 7-7 7"></path>
                             </svg>
-                        </a>
+                        </Link>
                         <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
                             <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                 <svg
@@ -76,7 +77,7 @@ const C = () => (
                             Photo booth fam kinfolk cold-pressed sriracha
                             leggings jianbing microdosing tousled waistcoat.
                         </p>
-                        <a class="text-blue-600 inline-flex items-center">
+                        <Link class="text-blue-600 inline-flex items-center">
                             Learn More
                             <svg
                                 class="w-4 h-4 ml-2"
@@ -90,7 +91,7 @@ const C = () => (
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5l7 7-7 7"></path>
                             </svg>
-                        </a>
+                        </Link>
                         <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
                             <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                 <svg
@@ -136,7 +137,7 @@ const C = () => (
                             Photo booth fam kinfolk cold-pressed sriracha
                             leggings jianbing microdosing tousled waistcoat.
                         </p>
-                        <a class="text-blue-600 inline-flex items-center">
+                        <Link class="text-blue-600 inline-flex items-center">
                             Learn More
                             <svg
                                 class="w-4 h-4 ml-2"
@@ -150,7 +151,7 @@ const C = () => (
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5l7 7-7 7"></path>
                             </svg>
-                        </a>
+                        </Link>
                         <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
                             <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                 <svg
