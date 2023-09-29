@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 
-import { FaHome, FaHeading } from "react-icons/fa";
+import { FaHome, FaHeading, FaShareAltSquare } from "react-icons/fa";
 import { IoMdNavigate } from "react-icons/io";
 import { RiGalleryFill } from "react-icons/ri";
 import { LuGalleryVerticalEnd } from "react-icons/lu";
@@ -127,6 +127,17 @@ export default function NavLeftBar({ showMenu }) {
                     >
                         <BsFillMenuButtonFill className={iconStyle} />
                         <span>Button</span>
+                    </Link>
+                    <Link
+                        to={"/share-button/"}
+                        className={
+                            pathname === "/share-button/"
+                                ? activeLink
+                                : inActiveLink
+                        }
+                    >
+                        <FaShareAltSquare className={iconStyle} />
+                        <span>Share Button</span>
                     </Link>
                 </nav>
             </aside>

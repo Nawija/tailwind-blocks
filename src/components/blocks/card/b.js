@@ -1,103 +1,218 @@
 import React from "react";
 
 const B = () => (
-    <section class="text-gray-800">
-        <div class="container px-5 lg:px-12 py-24 mx-auto">
-            <div class="flex flex-wrap w-full mb-20">
-                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-                    <h2 class="sm:text-3xl text-2xl font-medium mb-2 text-gray-900">
-                        Pitchfork Kickstarter Taxidermy
-                    </h2>
-                    <div class="h-1 w-20 bg-blue-600 rounded"></div>
+    <div class="flex items-center justify-center px-5 py-24">
+        <div class="flex flex-col max-w-7xl w-full md:w-[70%]">
+            <div class="flex flex-col lg:flex-row ">
+                <div class="bg-white shadow-lg rounded-xl flex items-start h-32 w-[90%] lg:w-1/2 justify-center py-4 px-8 mx-4 my-2">
+                    <div class="flex items-center justify-start w-full">
+                        <div class="flex-col w-[85%]">
+                            <div class="text-sm font-medium text-violet-600 my-2">
+                                Total Income
+                            </div>
+                            <div class="class flex items-center">
+                                <div class="text-3xl font-bold text-gray-700">
+                                    $2,30,568
+                                </div>
+                                <div class="flex items-center justify-between mx-2 px-0.5 py-0.5 rounded-xl text-green-500 font-medium ">
+                                    <div class="text-xs bg-green-200 px-2 rounded-lg">
+                                        + 78%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full h-1 rounded bg-gray-300 my-1">
+                                <div class="w-[78%] h-1 rounded bg-green-500"></div>
+                            </div>
+                            <div class="text-xs font-medium text-gray-400 ">
+                                Weekly Goal
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
-                    Whatever cardigan tote bag tumblr hexagon brooklyn
-                    asymmetrical gentrify, subway tile poke farm-to-table.
-                    Franzen you probably haven't heard of them man bun deep
-                    jianbing selfies heirloom prism food truck ugh squid celiac
-                    humblebrag.
-                </p>
+                <div class="bg-white shadow-lg rounded-xl flex items-start h-32 w-[90%] lg:w-1/2 justify-center py-4 px-8 mx-4 my-2">
+                    <div class="flex items-center justify-start w-full">
+                        <div class="flex-col w-[85%]">
+                            <div class="text-sm font-medium text-violet-600 my-2">
+                                Engaged Users
+                            </div>
+                            <div class="class flex items-center">
+                                <div class="text-3xl font-bold text-gray-700">
+                                    32.78%
+                                </div>
+                                <div class="flex items-center justify-between mx-2 px-0.5 py-0.5 rounded-xl text-red-500 font-medium ">
+                                    <div class="text-xs bg-red-200 px-2 rounded-lg">
+                                        - 7%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full h-1 rounded bg-gray-300 my-1">
+                                <div class="w-[33%] h-1 rounded bg-red-500"></div>
+                            </div>
+                            <div class="text-xs font-medium text-gray-400 ">
+                                Daily Goal
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-wrap -m-4">
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="bg-gray-100 p-4 rounded-lg">
-                        <img
-                            class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg"
-                            alt="content"
-                        />
-                        <h3 class="tracking-wide text-blue-600 text-xs font-medium">
-                            SUBTITLE
-                        </h3>
-                        <h2 class="text-lg text-gray-900 font-medium mb-4">
-                            Chichen Itza
-                        </h2>
-                        <p class="leading-relaxed text-base">
-                            Fingerstache flexitarian street art 8-bit waistcoat.
-                            Distillery hexagon disrupt edison bulbche.
-                        </p>
+            <div class="flex flex-col lg:flex-row ">
+                <div class="bg-white shadow-lg rounded-xl flex items-start max-w-1/2 w-[90%] lg:w-1/2 justify-center py-4 px-4 mx-4 my-2">
+                    <div class="flex items-center justify-start w-full">
+                        <div class="flex-col w-[85%]">
+                            <div class="text-sm font-medium text-violet-600 my-2">
+                                Weekly Income
+                            </div>
+                            <div class="class flex items-center">
+                                <div class="text-3xl font-bold text-gray-700">
+                                    $6,568
+                                </div>
+                                <div class="flex items-center justify-between mx-2 px-0.5 py-0.5 rounded-xl text-green-500 font-medium ">
+                                    <div class="text-xs bg-green-200 px-2 rounded-lg">
+                                        + 54%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-4 ">
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[20%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Mon
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[60%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Tue
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[70%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Wed
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[44%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Thu
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[87%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Fri
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[55%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Sat
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[34%] w-6 rounded-tr rounded-tl bg-green-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Sun
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="bg-gray-100 p-4 rounded-lg">
-                        <img
-                            class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="https://cdn.pixabay.com/photo/2015/11/15/14/30/veligandu-island-1044366_1280.jpg"
-                            alt="content"
-                        />
-                        <h3 class="tracking-wide text-blue-600 text-xs font-medium">
-                            SUBTITLE
-                        </h3>
-                        <h2 class="text-lg text-gray-900 font-medium mb-4">
-                            Colosseum Roma
-                        </h2>
-                        <p class="leading-relaxed text-base">
-                            Fingerstache flexitarian street art 8-bit waistcoat.
-                            Distillery hexagon disrupt edison bulbche.
-                        </p>
-                    </div>
-                </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="bg-gray-100 p-4 rounded-lg">
-                        <img
-                            class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="https://cdn.pixabay.com/photo/2018/03/12/20/07/maldives-3220702_1280.jpg"
-                            alt="content"
-                        />
-                        <h3 class="tracking-wide text-blue-600 text-xs font-medium">
-                            SUBTITLE
-                        </h3>
-                        <h2 class="text-lg text-gray-900 font-medium mb-4">
-                            Great Pyramid of Giza
-                        </h2>
-                        <p class="leading-relaxed text-base">
-                            Fingerstache flexitarian street art 8-bit waistcoat.
-                            Distillery hexagon disrupt edison bulbche.
-                        </p>
-                    </div>
-                </div>
-                <div class="xl:w-1/4 md:w-1/2 p-4">
-                    <div class="bg-gray-100 p-4 rounded-lg">
-                        <img
-                            class="h-40 rounded w-full object-cover object-center mb-6"
-                            src="https://cdn.pixabay.com/photo/2015/03/09/18/34/beach-666122_1280.jpg"
-                            alt="content"
-                        />
-                        <h3 class="tracking-wide text-blue-600 text-xs font-medium">
-                            SUBTITLE
-                        </h3>
-                        <h2 class="text-lg text-gray-900 font-medium mb-4">
-                            San Francisco
-                        </h2>
-                        <p class="leading-relaxed text-base">
-                            Fingerstache flexitarian street art 8-bit waistcoat.
-                            Distillery hexagon disrupt edison bulbche.
-                        </p>
+                <div class="bg-white shadow-lg rounded-xl flex items-start max-w-1/2 w-[90%] lg:w-1/2 justify-center py-4 px-4 mx-4 my-2">
+                    <div class="flex items-center justify-start w-full">
+                        <div class="flex-col w-[85%]">
+                            <div class="text-sm font-medium text-violet-600 my-2">
+                                Weekly Users
+                            </div>
+                            <div class="class flex items-center">
+                                <div class="text-3xl font-bold text-gray-700">
+                                    16,568
+                                </div>
+                                <div class="flex items-center justify-between mx-2 px-0.5 py-0.5 rounded-xl text-red-500 font-medium ">
+                                    <div class="text-xs bg-red-200 px-2 rounded-lg">
+                                        - 8.7%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mt-4 ">
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[79%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Mon
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[20%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Tue
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[30%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Wed
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[44%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Thu
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[67%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Fri
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[25%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Sat
+                                    </div>
+                                </div>
+                                <div class="flex-col">
+                                    <div class="h-16 w-6 rounded-tr rounded-tl bg-gray-100 mx-2">
+                                        <div class="h-[64%] w-6 rounded-tr rounded-tl bg-violet-300"></div>
+                                    </div>
+                                    <div class="text-xs font-medium ml-2 text-gray-500">
+                                        Sun
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 );
 
 export default B;

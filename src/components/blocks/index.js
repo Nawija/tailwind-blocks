@@ -22,6 +22,9 @@ const NavigationComponents = importAll(
 const PricingComponents = importAll(
     require.context("./pricing", true, /\.js$/)
 );
+const ShareButtonComponents = importAll(
+    require.context("./share-button", true, /\.js$/)
+);
 
 export {
     BlogComponents,
@@ -33,4 +36,5 @@ export {
     HeroComponents,
     NavigationComponents,
     PricingComponents,
+    ShareButtonComponents,
 };

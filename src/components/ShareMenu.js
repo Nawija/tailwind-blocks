@@ -40,7 +40,7 @@ function ShareMenu({ shareMenu, handleShareMenuClose }) {
     return (
         shareMenu && (
             <div
-                className={`bg-blue-600/90 backdrop-blur-md fixed right-0 top-20 -translate-x-1/2  -translate-y-1/2 p-12 w-80 h-96 z-[99] slide-bl text-white rounded-lg rounded-tr-none flex items-center justify-center flex-col shadow-2xl ${
+                className={`bg-blue-600/90 fixed right-0 top-20 -translate-x-1/2  -translate-y-1/2 p-12 w-80 h-96 z-[99] slide-bl text-white rounded-lg rounded-tr-none flex items-center justify-center flex-col shadow-2xl ${
                     addClassAnim ? "slide-tr" : ""
                 }`}
             >
