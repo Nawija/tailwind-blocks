@@ -1,19 +1,19 @@
 import React from "react";
 import Layout from "../../components/layout";
 import Seo from "../../components/Seo";
-
 import BlockWrapper from "../../components/BlockWrapper";
-import GalleryComponents from "../../components/gallery";
+import { GalleryComponents } from "../../components/blocks";
+
+function renderBlocks(components, titlePrefix) {
+    return Object.entries(components).map(([key, Component], index) => (
+        <BlockWrapper key={index} title={`${titlePrefix} #${index + 1}`}>
+            <Component />
+        </BlockWrapper>
+    ));
+}
 
 export default function GalleryPage() {
-    return (
-        <Layout>
-            {Object.entries(GalleryComponents).map(([key, Component], index) => (
-                <BlockWrapper key={index} title={`Gallery #${index + 1}`}>
-                    <Component />
-                </BlockWrapper>
-            ))}
-        </Layout>
-    );
+    return <Layout>{renderBlocks(GalleryComponents, "Gallery")}</Layout>;
 }
+
 export const Head = () => <Seo />;

@@ -1,19 +1,19 @@
 import React from "react";
 import Layout from "../../components/layout";
 import Seo from "../../components/Seo";
-
 import BlockWrapper from "../../components/BlockWrapper";
-import CtaComponents from "../../components/cta";
+import { CtaComponents } from "../../components/blocks";
+
+function renderBlocks(components, titlePrefix) {
+    return Object.entries(components).map(([key, Component], index) => (
+        <BlockWrapper key={index} title={`${titlePrefix} #${index + 1}`}>
+            <Component />
+        </BlockWrapper>
+    ));
+}
 
 export default function CtaPage() {
-    return (
-        <Layout>
-            {Object.entries(CtaComponents).map(([key, Component], index) => (
-                <BlockWrapper key={index} title={`CTA #${index + 1}`}>
-                    <Component />
-                </BlockWrapper>
-            ))}
-        </Layout>
-    );
+    return <Layout>{renderBlocks(CtaComponents, "CTA")}</Layout>;
 }
+
 export const Head = () => <Seo />;

@@ -1,22 +1,21 @@
 import React from "react";
 import Layout from "../../components/layout";
 import Seo from "../../components/Seo";
-
 import BlockWrapper from "../../components/BlockWrapper";
-import ButtonComponents from "../../components/button";
+import { ButtonComponents } from "../../components/blocks";
 
-export default function HeroPage() {
-    return (
-        <Layout>
-            <div className="text-center flex items-start justify-start flex-wrap">
-                {Object.entries(ButtonComponents).map(([key, Component], index) => (
-                    <BlockWrapper key={index} title={`Button #${index + 1}`}>
-                        <Component />
-                    </BlockWrapper>
-                ))}
-            </div>
-        </Layout>
-    );
+function renderBlocks(components, titlePrefix) {
+    return Object.entries(components).map(([key, Component], index) => (
+        <div>
+            <BlockWrapper key={index} title={`${titlePrefix} #${index + 1}`}>
+                <Component />
+            </BlockWrapper>
+        </div>
+    ));
+}
+
+export default function ButtonPage() {
+    return <Layout>{renderBlocks(ButtonComponents, "Button")}</Layout>;
 }
 
 export const Head = () => <Seo />;
