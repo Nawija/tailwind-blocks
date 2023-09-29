@@ -6,10 +6,15 @@ import { ShareButtonComponents } from "../../components/blocks";
 
 function renderBlocks(components, titlePrefix) {
     return Object.entries(components).map(([key, Component], index) => (
-        <div className="flex flex-wrap text-center">
-            <BlockWrapper key={index} title={`${titlePrefix} #${index + 1}`}>
-                <Component />
-            </BlockWrapper>
+        <div className="w-full flex items-start justify-start ml-auto text-center">
+            <div className="flex flex-wrap w-full ml-auto text-center">
+                <BlockWrapper
+                    key={index}
+                    title={`${titlePrefix} #${index + 1}`}
+                >
+                    <Component />
+                </BlockWrapper>
+            </div>
         </div>
     ));
 }
