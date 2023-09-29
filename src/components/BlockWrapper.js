@@ -26,18 +26,18 @@ function BlockWrapper({ children, title }) {
 
                     <button
                         onClick={handleCopyBtn}
-                        className="bg-main p-3 rounded-full border text-second w-max ml-auto"
+                        className="bg-main px-3 py-2 font-medium rounded-full border text-second w-max ml-auto"
                     >
                         {copyBtn ? (
                             <div className="flex-c text-green-500">
-                                <p className="text-sm mr-2 anim-pading-left">
+                                <p className="text-sm mr-2 w-10 anim-pading-left">
                                     Copied
                                 </p>
                                 <FaCheck />
                             </div>
                         ) : (
                             <div className="flex-c">
-                                <p className="text-sm mr-2">Copy</p>
+                                <p className="text-sm mr-2 w-10">Copy</p>
                                 <FaCopy />
                             </div>
                         )}

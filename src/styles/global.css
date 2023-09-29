@@ -136,9 +136,19 @@ body {
 
 @keyframes anim-pading-left {
     0% {
-        transform: translateX(10px);
+        transform: translateX(25px);
+        scale: .8;
+    }
+    30% {
+        rotate: -7deg;
+        scale: 1.2;
+        color: rgb(219, 181, 13);
+        transform: translateX(-5px);
+    }
+    70% {
+        rotate: 10deg;
     }
     100% {
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 }
