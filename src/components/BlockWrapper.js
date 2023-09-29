@@ -17,7 +17,7 @@ function BlockWrapper({ children, title }) {
         }
     }
     return (
-        <div className="relative transition-all pb-10 wrapper2xl">
+        <div className="relative transition-all md:pb-10 wrapper2xl">
             <div className="flex flex-col w-full text-xl p-2">
                 <div className="bg-main rounded-full border text-second flex-b py-2 px-4">
                     <p className="text-sm font-semibold tracking-wide mr-3">
@@ -26,7 +26,7 @@ function BlockWrapper({ children, title }) {
 
                     <button
                         onClick={handleCopyBtn}
-                        className="bg-main px-3 py-2 font-medium rounded-full border border-l-4 border-l-amber-400 text-second text-lg w-max ml-auto"
+                        className="bg-main px-3 py-2 font-medium rounded-full border border-l-4 group hover:border-l-sky-600 duration-300 transition-all border-l-amber-400 text-second text-lg w-max ml-auto"
                     >
                         {copyBtn ? (
                             <div className="flex-c text-green-500">
@@ -37,8 +37,10 @@ function BlockWrapper({ children, title }) {
                             </div>
                         ) : (
                             <div className="flex-c">
-                                <p className="text-sm mr-2.5 w-10">Copy</p>
-                                <FaCopy />
+                                <p className="text-sm mr-2.5 w-10 group-hover:text-sky-600 duration-300 transition-colors">
+                                    Copy
+                                </p>
+                                <FaCopy className="group-hover:scale-110 group-hover:rotate-6 duration-300 group-hover:text-sky-600 transition-all" />
                             </div>
                         )}
                     </button>

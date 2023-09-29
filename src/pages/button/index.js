@@ -5,13 +5,17 @@ import BlockWrapper from "../../components/BlockWrapper";
 import { ButtonComponents } from "../../components/blocks";
 
 function renderBlocks(components, titlePrefix) {
-    return Object.entries(components).map(([key, Component], index) => (
-        <div className="flex flex-wrap text-center">
-            <BlockWrapper key={index} title={`${titlePrefix} #${index + 1}`}>
-                <Component />
-            </BlockWrapper>
+    return (
+        <div className="flex flex-wrap items-center justify-center text-center mx-auto">
+            {Object.entries(components).map(([key, Component], index) => (
+                <div key={index} className="w-max p-2">
+                    <BlockWrapper title={`${titlePrefix} #${index + 1}`}>
+                        <Component />
+                    </BlockWrapper>
+                </div>
+            ))}
         </div>
-    ));
+    );
 }
 
 export default function ButtonPage() {

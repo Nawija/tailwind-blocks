@@ -10,7 +10,8 @@ const B = () => (
                 <p class="lg:w-3/5 mx-auto leading-relaxed text-base text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua, lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    aliqua, lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit
                 </p>
             </div>
             <div class="flex flex-wrap -m-4">
@@ -91,8 +92,8 @@ const B = () => (
                     </div>
                 </div>
                 <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-                    <div class="h-full p-6 rounded-lg border-2 border-blue-600 flex flex-col relative overflow-hidden">
-                        <small class="bg-blue-600 text-white px-4 py-1 tracking-wide text-xs absolute right-0 top-0 rounded-bl font-bold">
+                    <div class="h-full p-6 rounded-lg border-2 scale-105 border-sky-600 flex flex-col relative overflow-hidden">
+                        <small class="bg-sky-600 text-white px-4 py-1 tracking-wide text-xs absolute right-0 top-0 rounded-bl font-bold">
                             POPULAR
                         </small>
                         <small class="text-sm tracking-widest mb-1 font-medium">
@@ -168,7 +169,7 @@ const B = () => (
                             </span>
                             Lorem ipsum dolor sit
                         </p>
-                        <button class="flex items-center mt-auto text-white bg-blue-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-600 transition-colors rounded">
+                        <button class="flex items-center mt-auto text-white bg-sky-600 border-0 py-2 px-4 w-full focus:outline-none hover:bg-sky-800 transition-colors rounded">
                             Button
                             <svg
                                 fill="none"
