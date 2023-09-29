@@ -7,30 +7,39 @@ const styleBtn =
 function ShareMenu({ shareMenu, handleShareMenuClose }) {
     const [addClassAnim, setAddClassAnim] = useState(false);
 
+    const handleCloseMenu = () => {
+        setAddClassAnim(true);
+        setTimeout(() => {
+            handleShareMenuClose();
+            setAddClassAnim(false);
+        }, 200);
+    };
+
     const handleClick = (platform) => {
         let shareUrl = "";
 
         // Define the share URL based on the selected platform
         switch (platform) {
             case "facebook":
-                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                    window.location.href
+                )}`;
                 break;
             case "instagram":
                 // Replace 'YOUR_INSTAGRAM_SHARE_URL' with the actual Instagram share URL for your website
                 shareUrl = "YOUR_INSTAGRAM_SHARE_URL";
                 break;
             case "twitter":
-                shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}`;
+                shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                    window.location.href
+                )}`;
                 break;
             default:
                 break;
         }
-
-        // Open the share URL in a new window or tab
         window.open(shareUrl, "_blank");
 
-        // Close the share menu
-        handleShareMenuClose();
+        handleCloseMenu();
     };
 
     return (
@@ -41,16 +50,31 @@ function ShareMenu({ shareMenu, handleShareMenuClose }) {
                 }`}
             >
                 <button
-                    onClick={handleClick}
+                    onClick={handleCloseMenu}
                     className={`absolute right-4 top-4`}
                 >
                     <IoCloseOutline className="text-white text-3xl" />
                 </button>
                 <h2 className="mb-12 font-medium text-xl">Udostepnij nas:</h2>
                 <div className="flex items-stretch justify-center flex-col text-center">
-                    <button onClick={() => handleClick("facebook")} className={styleBtn}>Facebook</button>
-                    <button onClick={() => handleClick("instagram")} className={styleBtn}>Instagram</button>
-                    <button onClick={() => handleClick("twitter")} className={styleBtn}>Twitter</button>
+                    <button
+                        onClick={() => handleClick("facebook")}
+                        className={styleBtn}
+                    >
+                        Facebook
+                    </button>
+                    <button
+                        onClick={() => handleClick("instagram")}
+                        className={styleBtn}
+                    >
+                        Instagram
+                    </button>
+                    <button
+                        onClick={() => handleClick("twitter")}
+                        className={styleBtn}
+                    >
+                        Twitter
+                    </button>
                 </div>
             </div>
         )
