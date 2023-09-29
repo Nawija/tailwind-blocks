@@ -2,45 +2,55 @@ import React from "react";
 import { Link } from "gatsby";
 
 const D = () => (
-    <header class="text-gray-800 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <Link class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-                    viewBox="0 0 24 24"
-                >
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
-                <span class="ml-3 text-xl">Tailblocks</span>
-            </Link>
-            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <Link class="mr-5 hover:text-gray-900">First Link</Link>
-                <Link class="mr-5 hover:text-gray-900">Second Link</Link>
-                <Link class="mr-5 hover:text-gray-900">Third Link</Link>
-                <Link class="mr-5 hover:text-gray-900">Fourth Link</Link>
-            </nav>
-            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-                Button
-                <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-1"
-                    viewBox="0 0 24 24"
-                >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
+    <div class="bg-white py-12 px-5">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <div class="flex overflow-hidden rounded-lg bg-gray-100">
+                <div class="relative hidden bg-gray-200 sm:block sm:w-1/3 lg:w-1/2">
+                    <img
+                        src="https://images.unsplash.com/photo-1604076913837-52ab5629fba9?auto=format&q=75&fit=crop&w=750"
+                        alt="Photo by mymind"
+                        class="absolute inset-0 h-full w-full object-cover object-center"
+                    />
+                </div>
+
+                <div class="flex w-full items-center p-4 sm:w-2/3 sm:p-8 lg:w-1/2 lg:pl-10">
+                    <div class="flex w-full flex-col items-center sm:block">
+                        <div class="mb-4 sm:mb-8">
+                            <h2 class="text-center text-xl font-bold text-blue-600 sm:text-left sm:text-2xl lg:text-3xl">
+                                Get the latest updates
+                            </h2>
+                            <p class="text-center text-gray-500 sm:text-left">
+                                Sign up for our newsletter
+                            </p>
+                        </div>
+
+                        <form class="mb-3 flex w-full max-w-md gap-2 sm:mb-5">
+                            <input
+                                placeholder="Email"
+                                class="bg-gray-white w-full flex-1 rounded border border-gray-300 px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-blue-300 transition duration-100 focus:ring"
+                            />
+
+                            <button class="inline-block rounded bg-blue-600 px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-blue-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:bg-blue-800 md:text-base">
+                                Send
+                            </button>
+                        </form>
+
+                        <p class="text-center text-xs text-gray-400 sm:text-left">
+                            By signing up to our newsletter you agree to our{" "}
+                            <Link class="underline transition duration-100 hover:text-blue-500 active:text-blue-600">
+                                Term of Service
+                            </Link>{" "}
+                            and{" "}
+                            <Link class="underline transition duration-100 hover:text-blue-500 active:text-blue-600">
+                                Privacy Policy
+                            </Link>
+                            .
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 );
 
 export default D;

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 const C = () => (
     <div class="flex justify-center px-5 py-24">
