@@ -39,7 +39,6 @@ export default function IndexPage() {
                         code blocks for Tailwind CSS.
                     </p>
                 </section>
-
                 <section class="text-gray-800">
                     <div class="container px-5 lg:px-12 py-24 mx-auto flex flex-wrap">
                         <div class="flex flex-wrap w-full">
