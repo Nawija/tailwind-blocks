@@ -8,7 +8,7 @@
     left: 0;
     background: hsla(207, 23%, 46%, 0.04);
     color: #ffd000;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(6px);
 }
 
 /* #nprogress .bar {
