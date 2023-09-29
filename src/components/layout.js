@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     const [shareMenu, setShareMenu] = useState(false);
 
     const handleShowMenu = () => setShowMenu(!showMenu);
-    const handleShareMenu = () => setShareMenu(!shareMenu);
+    const handleShareMenu = () => setShareMenu(true);
     const handleShareMenuClose = () => setShareMenu(false);
 
     const handleCloseLeftMenu = () => {
@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
             <Nav
                 showMenu={showMenu}
                 handleShowMenu={handleShowMenu}
+                shareMenu={shareMenu}
                 handleShareMenu={handleShareMenu}
             />
             <NavLeftBar showMenu={showMenu} />

@@ -2,8 +2,9 @@ import React from "react";
 import MenuButton from "./MenuButton";
 
 import { RiShareForwardFill } from "react-icons/ri";
+import { IoCloseOutline } from "react-icons/io5";
 
-const Nav = ({ showMenu, handleShowMenu, handleShareMenu }) => {
+const Nav = ({ showMenu, shareMenu, handleShowMenu, handleShareMenu }) => {
     return (
         <>
             <aside
@@ -48,7 +49,9 @@ const Nav = ({ showMenu, handleShowMenu, handleShareMenu }) => {
                 <button
                     onClick={handleShareMenu}
                     placeholder="share"
-                    className="flex items-center justify-center font-medium text-base p-2"
+                    className={`flex items-center justify-center font-medium text-base p-2 ${
+                        shareMenu ? "animate-pulse" : ""
+                    }`}
                 >
                     <p className="mr-1">Share</p>
                     <RiShareForwardFill className="text-2xl" />

@@ -6,7 +6,7 @@ import { ButtonComponents } from "../../components/blocks";
 
 function renderBlocks(components, titlePrefix) {
     return Object.entries(components).map(([key, Component], index) => (
-        <div>
+        <div className="flex flex-wrap text-center">
             <BlockWrapper key={index} title={`${titlePrefix} #${index + 1}`}>
                 <Component />
             </BlockWrapper>
