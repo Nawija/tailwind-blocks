@@ -2,6 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+    pathPrefix: "/tailwind-blocks",
     siteMetadata: {
         title: `Tailwind CSS Blocks - Ready-to-Use Code for Stunning Web Pages`,
         description: `Create Stunning Web Pages with Tailwind CSS Blocks - Your Source for Ready-to-Use Code`,
