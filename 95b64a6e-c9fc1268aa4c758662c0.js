@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktailwindcss=self.webpackChunktailwindcss||[]).push([[866],{1649:function(t,n,a){a.d(n,{YjT:function(){return s}});var i=a(4405);function s(t){return(0,i.w_)({tag:"svg",attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{d:"M256 64L96 433.062 110.938 448 256 384l145.062 64L416 433.062z"}}]})(t)}}}]);
+//# sourceMappingURL=95b64a6e-c9fc1268aa4c758662c0.js.map

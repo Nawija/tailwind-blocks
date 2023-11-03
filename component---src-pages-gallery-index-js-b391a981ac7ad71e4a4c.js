@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktailwindcss=self.webpackChunktailwindcss||[]).push([[683],{2025:function(e,t,n){n.r(t),n.d(t,{Head:function(){return s},default:function(){return i}});var l=n(7294),r=n(3601),u=n(1755),c=n(9767),a=n(322);function i(){return l.createElement(r.Z,null,(e=a.gI,t="Gallery",Object.entries(e).map(((e,n)=>{let[r,u]=e;return l.createElement(c.Z,{key:n,title:t+" #"+(n+1)},l.createElement(u,null))}))));var e,t}const s=()=>l.createElement(u.Z,null)}}]);
+//# sourceMappingURL=component---src-pages-gallery-index-js-b391a981ac7ad71e4a4c.js.map

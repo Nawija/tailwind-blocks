@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktailwindcss=self.webpackChunktailwindcss||[]).push([[260],{155:function(t,n,i){i.d(n,{IOM:function(){return r}});var e=i(4405);function r(t){return(0,e.w_)({tag:"svg",attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{fill:"none",strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"32",d:"M368 368L144 144m224 0L144 368"}}]})(t)}}}]);
+//# sourceMappingURL=ae51ba48-5da2b380dee1d5707b25.js.map
